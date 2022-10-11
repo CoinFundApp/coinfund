@@ -1,3 +1,27 @@
 User-Agent: *
+Allow: /
+Allow: /css/*
+Allow: /fonts/*
+Allow: /images/*
+Allow: /js/*
+Allow: /app*
+Allow: /about*
+Allow: /aup*
+Allow: /blocked*
+Allow: /contact*
+Allow: /cookies*
+Allow: /faq*
+Allow: /fees*
+Allow: /about*
+Allow: /how*
+Allow: /index*
+Allow: /privacy*
+Allow: /report*
+Allow: /robots.txt
+Allow: /sitemap.xml
+Allow: /terms*
+Allow: /token*
+Allow: /why-self-custody-cryptocurrency-wallets-are-censorship-resistant*
+Disallow: /*
 
 Sitemap: https://coinfundit.com/sitemap.xml
