@@ -1,5 +1,5 @@
 User-Agent: *
-Allow: /
+Allow: /$
 Allow: /css/*
 Allow: /fonts/*
 Allow: /images/*
