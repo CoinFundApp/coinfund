@@ -21,7 +21,6 @@ Allow: /token/
 Allow: /why-self-custody-cryptocurrency-wallets-are-censorship-resistant/
 Allow: /robots.txt
 Allow: /sitemap.xml
-Allow: /cloudflare/
 Disallow: /
 
 Sitemap: https://coinfundit.com/sitemap.xml
