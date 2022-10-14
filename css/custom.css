@@ -21,7 +21,7 @@
     width: inherit
   }
   .header.site-header .column-wrap>div {
-    padding: 0 10px;
+    padding: 0 10px  !important;
  }
 }
 
