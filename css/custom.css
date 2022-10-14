@@ -13,7 +13,7 @@
   height: 150px !important;
 }
 
-@media only screen and (max-width: 479px) {
+@media only screen and (max-width: 279px) {
   .header-button-01 .sala-button {
     font-size: 16px;
     line-height: inherit;
