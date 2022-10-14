@@ -20,9 +20,6 @@
     padding: 7px 32px !important;
     width: inherit
   }
-  .header.site-header .column-wrap>div {
-    padding: 0 10px  !important;
- }
 }
 
 .cdt-table.dark .title-bar {
