@@ -1,16 +1,3 @@
-@charset "UTF-8";
-/*!
-Theme Name: Sala
-Theme URI: https://sala.uxper.co/
-Author: Uxper
-Author URI: http://uxper.co/
-Description: Sala – Unique WordPress Theme is top-notch technology & creative IT theme. By using this theme anyone can build for Startup, Apps, SaaS, IT services...
-Version: 1.0.5
-License: GNU General Public License v2 or later
-License URI: http://www.gnu.org/licenses/gpl-2.0.html
-Text Domain: sala
-Tags: agency, app landing, business, corporate, ecommerce, marketing, saas theme, seo, software theme, startup
-*/
 .sala-image, .sala-swiper-slider:hover .swiper-nav-button, .sala-swiper:hover .swiper-nav-button, .sala-swiper-slider .swiper-pagination-bullet:before, .sala-swiper .swiper-pagination-bullet:before, .sala-swiper-slider.pagination-style-05 .swiper-pagination-bullet:after, .sala-swiper.pagination-style-05 .swiper-pagination-bullet:after, .page-scroll-up, .page-scroll-up i, .sala-grid-wrapper.filter-style-01 .filter-counter, .sala-grid-pagination .navigation-buttons .nav-link, .sala-accordion .accordion-header, .sala-accordion .accordion-title, .sala-accordion .accordion-icon, .elementor-widget-sala-icon-box .sala-icon-box, .elementor-widget-sala-icon-box .sala-icon-box:before, .elementor-widget-sala-icon-box .icon, .elementor-widget-sala-icon-box .heading, .elementor-widget-sala-icon-box .description, .elementor-widget-sala-icon-box .icon-box-button, .elementor-widget-sala-icon-box .heading-divider:after, .elementor-widget-sala-icon-box.sala-icon-box-style-02 .sala-icon-box:after, .sala-icon .icon, .svg-defs-gradient .stop-a, .svg-defs-gradient .stop-b, .elementor-widget-sala-image-carousel .image img, .sala-list .icon, .sala-list .text, .sala-modern-carousel-style-01 .slide-image, .sala-modern-carousel-style-04 .slide-image, .sala-modern-carousel-style-02 .slide-image, .sala-modern-carousel-style-02 .slide-button:after, .sala-modern-carousel-style-03 .slide-button:after, .sala-popup-video .icon:before, .sala-popup-video .video-overlay, .sala-social-networks .link-icon, .sala-social-networks .link-text, .sala-team-member-style-01 .photo, .sala-team-member-style-01 .overlay, .sala-team-member-style-01 .social-networks, .sala-team-member-style-01 .social-networks a, .sala-team-member-style-02 .photo, .sala-team-member-style-02 .overlay, .sala-team-member-style-02 .info, .sala-team-member-style-02 .social-networks, .sala-team-member-style-02 .social-networks a, .sala-team-member-style-03 .photo, .sala-team-member-style-03 .overlay, .sala-team-member-style-03 .info, .sala-team-member-style-03 .social-networks, .sala-team-member-style-03 .social-networks a, .sala-team-member-carousel .photo, .sala-team-member-carousel .overlay, .sala-team-member-carousel .social-networks, .sala-team-member-carousel .social-networks a, .sala-ele-button .button-text, .sala-ele-button.style-flat:before, .sala-ele-button.style-flat:after, .sala-ele-button.style-border:before, .sala-ele-button.style-border:after, .sala-ele-button.style-thick-border:before, .sala-ele-button.style-thick-border:after { transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1); }
 
 .sala-social-networks ul::after, .style-01 .sala-timeline .timeline-item::after, .style-02 .sala-timeline .timeline-item::after, .style-03 .sala-timeline .timeline-item::after { content: ""; display: table; clear: both; }
