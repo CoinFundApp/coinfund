@@ -13,13 +13,16 @@
   height: 150px !important;
 }
 
-@media only screen and (max-width: 679px) {
+@media only screen and (max-width: 279px) {
   .header-button-01 .sala-button {
     font-size: 16px;
     line-height: inherit;
     padding: 7px 32px !important;
     width: inherit
   }
+  .header.site-header .column-wrap>div {
+    padding: 0 10px;
+ }
 }
 
 .cdt-table.dark .title-bar {
