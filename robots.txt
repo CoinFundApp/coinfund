@@ -7,7 +7,6 @@ Allow: /$
 Allow: /app/
 Allow: /about/
 Allow: /aup/
-Allow: /blocked/
 Allow: /contact/
 Allow: /cookies/
 Allow: /faq/
