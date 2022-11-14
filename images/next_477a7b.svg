@@ -1,10 +1,1 @@
-<?xml version="1.0" encoding="utf-8"?>
-<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 155.91 155.91" style="enable-background:new 0 0 155.91 155.91;" xml:space="preserve">
-<style type="text/css">
-.st0{fill:#0073F1;}
-</style>
-<polygon class="st0" points="61.78,83.69 33.05,120.29 54.22,120.29 82.85,83.69 "/>
-<polygon class="st0" points="56.33,35.42 35.42,35.42 62.98,70.57 83.56,70.57 "/>
-<polygon class="st0" points="86.32,55.67 97.03,69.5 122.42,35.42 100.87,35.42 "/>
-<polygon class="st0" points="86.14,98.64 101.81,120.29 122.86,120.29 97.37,84.35 "/>
-</svg>
+<svg enable-background="new 0 0 155.91 155.91" viewBox="0 0 155.91 155.91" xmlns="http://www.w3.org/2000/svg"><g fill="#0073f1"><path d="m61.78 83.69-28.73 36.6h21.17l28.63-36.6z"/><path d="m56.33 35.42h-20.91l27.56 35.15h20.58z"/><path d="m86.32 55.67 10.71 13.83 25.39-34.08h-21.55z"/><path d="m86.14 98.64 15.67 21.65h21.05l-25.49-35.94z"/></g></svg>
