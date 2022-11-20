@@ -8,4 +8,7 @@ Decentralized, non-custodial, non-KYC Bitcoin and Altcoin crypto crowdfunding, d
 
 Wallet forked and rebuilt from https://github.com/Spl0itable/wallet
 
-Censorship-resistant access: ipfs://QmTVpdD7t397nHsF7vxXdbbEpEMeQZkXFFvfbkjc2Twx3E
+Censorship-resistant access: 
+
+ipfs://QmTVpdD7t397nHsF7vxXdbbEpEMeQZkXFFvfbkjc2Twx3E
+http://j37wkrgo5pbwtkljmrcwhqphl7i635glhplyd3udxc5bcoisvcsaulad.onion
