@@ -233,18 +233,5 @@ window.widgetERC20Comisions = {
   }
 };
 window.SO_FaqBeforeTabs = [];
-window.SO_FaqAfterTabs = [{
-  "title": "Are there any additional fees?",
-  "content": "Yes, in addition to the miner fees associated with the respective blockchain, we charge a very small 0.33% transaction fee."
-}, {
-  "title": "Do I need an account?",
-  "content": "No. We do not require signup to use our service. This means no email or phone number can be linked to you. We don\u2019t even employ any third-party trackers. Our access logs only track device User Agents and IP addresses. Any session data (private keys, etc) are stored in your browser. If you clear your browser cache, but did not save your seed phrase or private key then your wallet and holdings will be lost."
-}, {
-  "title": "How is the service decentralized?",
-  "content": "As we have no requirement for account signup, we cannot track individual users. Our automatically generated wallets are non-custodial. Due to this, wallet private keys are stored in the browser. Since they are self-custody hot wallets, we have no way to access\/freeze\/alter any holdings within the wallets."
-}];
-window.bannersOnMainPage = [
-  ["ETH to BTC Atomic Swap exchange", "ETH to BTC Atomic Swap exchange", "Decentralized atomic swap exchange", "\/images\/02\/What-is-Swap.online.jpg", "\/exchange\/eth-to-btc", ""],
-  ["Buy bitcoin using VISA\/MC", "Buy bitcoin using VISA\/MC", "Buy cryptocurrency via credit card", "\/images\/02\/credit-card.jpeg", "https:\/\/global.transak.com\/?apiKey=e9d70df8-2f71-45ad-8c7a-fe2915667ece&hostURL=https:\/\/coinfundit.com&environment=PRODUCTION&redirectURL=https:\/\/coinfundit.com\/app&defaultCryptoCurrency=BTC", ""],
-  ["Crowdfunding get started", "Crowdfunding get started", "Start crowdfunding with cryptocurrency", "\/images\/02\/crowdfunding-campaigns-success.jpeg", "https:\/\/coinfundit.com\/how\/", ""]
-];
+window.SO_FaqAfterTabs = [];
+window.bannersOnMainPage = [];
