@@ -134,7 +134,7 @@ window.widgetEvmLikeTokens = [{
   standard: 'erc20',
   address: '0xdac17f958d2ee523a2206206994597c13d831ec7',
   decimals: 6,
-  fullName: 'TetherUSD',
+  fullName: 'Tether',
   icon: '',
   customExchangeRate: '',
   iconBgColor: '',
