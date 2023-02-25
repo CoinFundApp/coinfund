@@ -141,6 +141,7 @@ window.widgetEvmLikeTokens = [{
   howToDeposit: '',
   howToWithdraw: '',
   order: '0',
+/*  
 }, {
   name: 'cfi',
   symbol: 'cfi',
@@ -154,6 +155,7 @@ window.widgetEvmLikeTokens = [{
   howToDeposit: '',
   howToWithdraw: '',
   order: '1',
+*/  
 }]
 window.prerenderReady = false;
 window.CUSTOM_LOGO = false;
