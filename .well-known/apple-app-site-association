@@ -1,0 +1,15 @@
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "Y99N97ZJ87.com.coinfundit.wallet" ],
+             "components": [
+               {
+                  "/": "/app/*",
+                  "comment": "Opens any app link."
+               }
+             ]
+           }
+       ]
+   },
+}
