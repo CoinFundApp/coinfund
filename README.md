@@ -6,6 +6,7 @@ Decentralized, non-custodial, non-KYC Bitcoin and Altcoin crypto crowdfunding, d
 
 - Wallet forked and rebuilt from https://github.com/Spl0itable/wallet
 - Campaign invoices forked and rebuilt from https://github.com/Spl0itable/backend_invoices
+- Android and iOS app source code: https://github.com/Spl0itable/cfi-app/tree/flutterflow
 
 ## How it works
 Use the CoinFundIt.com service to generate a Bitcoin (BIP-32) hot wallet using a master seed phrase. The master seed phrase is equally used for Ethereum-based tokens and wallets.
