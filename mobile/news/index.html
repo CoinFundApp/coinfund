@@ -1,8 +1,664 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-<style>body {background-color: #111111;}</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="max-image-preview:large">
+<title>widget</title>
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="alternate" type="application/rss+xml" title="widget &raquo; Feed" href="./../feed/index.html">
+<link rel="alternate" type="application/rss+xml" title="widget &raquo; Comments Feed" href="./../comments/feed/index.html">
+<style id="global-styles-inline-css">ul.mcw-news a.mcw-n-title {color: #FFFFFF;}body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #ffffff;--wp--preset--color--contrast: #000000;--wp--preset--color--primary: #9DFF20;--wp--preset--color--secondary: #345C00;--wp--preset--color--tertiary: #F6F6F6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: clamp(0.875rem, 0.875rem + ((1vw - 0.48rem) * 0.24), 1rem);--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.48rem) * 0.24), 1.125rem);--wp--preset--font-size--large: clamp(1.75rem, 1.75rem + ((1vw - 0.48rem) * 0.24), 1.875rem);--wp--preset--font-size--x-large: 2.25rem;--wp--preset--font-size--xx-large: clamp(4rem, 4rem + ((1vw - 0.48rem) * 11.538), 10rem);--wp--preset--font-family--dm-sans: "DM Sans", sans-serif;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--system-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;--wp--preset--spacing--30: clamp(1.5rem, 5vw, 2rem);--wp--preset--spacing--40: clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);--wp--preset--spacing--50: clamp(2.5rem, 8vw, 4.5rem);--wp--preset--spacing--60: clamp(3.75rem, 10vw, 7rem);--wp--preset--spacing--70: clamp(5rem, 5.25rem + ((1vw - 0.48rem) * 9.096), 8rem);--wp--preset--spacing--80: clamp(7rem, 14vw, 11rem);}body { margin: 0;--wp--style--global--content-size: 650px;--wp--style--global--wide-size: 1200px; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding :where(.has-global-padding) { padding-right: 0; padding-left: 0; }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(.has-global-padding) > .alignfull { margin-right: 0; margin-left: 0; }.has-global-padding > .alignfull:where(:not(.has-global-padding)) > :where([class*="wp-block-"]:not(.alignfull):not([class*="__"]),p,h1,h2,h3,h4,h5,h6,ul,ol) { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding :where(.has-global-padding) > .alignfull:where(:not(.has-global-padding)) > :where([class*="wp-block-"]:not(.alignfull):not([class*="__"]),p,h1,h2,h3,h4,h5,h6,ul,ol) { padding-right: 0; padding-left: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }.wp-site-blocks > * { margin-block-start: 0; margin-block-end: 0; }.wp-site-blocks > * + * { margin-block-start: 1.5rem; }body { --wp--style--block-gap: 1.5rem; }body .is-layout-flow > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-flow > * + *{margin-block-start: 1.5rem;margin-block-end: 0;}body .is-layout-constrained > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-constrained > * + *{margin-block-start: 1.5rem;margin-block-end: 0;}body .is-layout-flex{gap: 1.5rem;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{background-color: #111111;color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);line-height: 1.6;--wp--style--root--padding-top: var(--wp--preset--spacing--40);--wp--style--root--padding-right: var(--wp--preset--spacing--30);--wp--style--root--padding-bottom: var(--wp--preset--spacing--40);--wp--style--root--padding-left: var(--wp--preset--spacing--30);}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--contrast);text-decoration: underline;}a:where(:not(.wp-element-button)):hover{text-decoration: none;}a:where(:not(.wp-element-button)):focus{text-decoration: underline dashed;}a:where(:not(.wp-element-button)):active{color: var(--wp--preset--color--secondary);text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;line-height: 1.4;}h1{font-size: clamp(2.719rem, 2.719rem + ((1vw - 0.48rem) * 1.742), 3.625rem);line-height: 1.2;}h2{font-size: clamp(2.625rem, calc(2.625rem + ((1vw - 0.48rem) * 8.4135)), 3.25rem);line-height: 1.2;}h3{font-size: var(--wp--preset--font-size--x-large);}h4{font-size: var(--wp--preset--font-size--large);}h5{font-size: var(--wp--preset--font-size--medium);font-weight: 700;text-transform: uppercase;}h6{font-size: var(--wp--preset--font-size--medium);text-transform: uppercase;}.wp-element-button, .wp-block-button__link{background-color: var(--wp--preset--color--primary);border-radius: 0;border-width: 0;color: var(--wp--preset--color--contrast);font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.wp-element-button:visited, .wp-block-button__link:visited{color: var(--wp--preset--color--contrast);}.wp-element-button:hover, .wp-block-button__link:hover{background-color: var(--wp--preset--color--contrast);color: var(--wp--preset--color--base);}.wp-element-button:focus, .wp-block-button__link:focus{background-color: var(--wp--preset--color--contrast);color: var(--wp--preset--color--base);}.wp-element-button:active, .wp-block-button__link:active{background-color: var(--wp--preset--color--secondary);color: var(--wp--preset--color--base);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-system-font-font-family{font-family: var(--wp--preset--font-family--system-font) !important;}.has-source-serif-pro-font-family{font-family: var(--wp--preset--font-family--source-serif-pro) !important;}</style>
+<link rel="stylesheet" id="mcw-crypto-css" href="./../assets/css/style.css" media="all">
+<link rel="stylesheet" id="mcw-crypto-select-css" href="./../assets/css/selectize.custom.css" media="all">
+<link rel="stylesheet" id="mcw-crypto-datatable-css" href="./../assets/css/jquery.dataTables.min.css" media="all">
+<script src="./../assets/js/jquery.min.js" id="jquery-core-js"></script>
+<script src="./../assets/js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
 </head>
-<body>
-<div style="zoom:200%;"><rssapp-list id="tuJ7HbXgRYpFPD43"></rssapp-list><script src="https://widget.rss.app/v1/list.js" type="text/javascript" async></script></div>
+
+<body class="page-template-default page page-id-15 wp-embed-responsive">
+<div class="has-global-padding is-layout-constrained entry-content wp-block-post-content">
+<div class="cryptoboxes news" id="mcw-14"><ul class="mcw-news">
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/silicon-valley-bank-failure-could-trigger-run-on-u-s-regional-banks" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvNGViN2M3YWMtYTU1Yi00NTViLWIzZWEtNDk4YjNjNmYxMDQwLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/silicon-valley-bank-failure-could-trigger-run-on-u-s-regional-banks" target="_blank" rel="nofollow" class="mcw-n-title">Silicon Valley Bank failure could trigger run on U.S. regional banks</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 1 hour ago</div>
+<div class="mcw-n-text">A petition urging regulators to step in claims that nearly 40,000 of all depositors at Silicon Valley Bank are small businesses. Federal Reserve and Federal&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/silicon-valley-bank-s-uk-branch-shut-down-by-bank-of-england" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvYWU2YzE5MjMtZWMyZi00NjMwLTg4NGEtNzFmMzI3MjAyNDhlLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/silicon-valley-bank-s-uk-branch-shut-down-by-bank-of-england" target="_blank" rel="nofollow" class="mcw-n-title">Silicon Valley Bank&#039;s UK branch shut down by Bank of England</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 1 hour ago</div>
+<div class="mcw-n-text">Several U.K. venture capital firms have shown support for SVB UK stating it is a “trusted” partner and plays a &#8220;pivotal&#8221; role in supporting startups.&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/insolvency-fears-led-many-to-turn-to-other-stablecoins-sell-usdc-at-a-major-discount" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDEvNTllZTg0MTItOGQ1MS00OTM5LTgwYWItYTc4NTg2OTg3MDA0LmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/insolvency-fears-led-many-to-turn-to-other-stablecoins-sell-usdc-at-a-major-discount" target="_blank" rel="nofollow" class="mcw-n-title">Insolvency fears led many to turn to other stablecoins, sell USDC at a major discount</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 2 hours ago</div>
+<div class="mcw-n-text">Several USD Coin holders have fled to other stablecoins amid fears surrounding its solvency. Several USD Coin (USDC) holders have fled to other stablecoins since&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/magazine/silicon-valley-bank-down-usdc-depegged-ftx-billed-34m-jan-hodlers-digest-march-5-11/" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://cointelegraph.com/magazine/wp-content/uploads/2023/03/march-11-scaled.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/magazine/silicon-valley-bank-down-usdc-depegged-ftx-billed-34m-jan-hodlers-digest-march-5-11/" target="_blank" rel="nofollow" class="mcw-n-title">Silicon Valley Bank down, USDC depegged, FTX billed $34M in Jan.: Hodler’s Digest, March 5-11</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 4 hours ago</div>
+<div class="mcw-n-text">Bank run on Silicon Valley Bank, USDC depegged from U.S. dollar and FTX’s bankruptcy expenses hit $34 million in January. Top Stories This WeekSilicon Valley&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/circle-plans-to-cover-missing-liquidity-in-silicon-valley-bank-with-corporate-funds" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvYTZiZDI3NDAtNmVjNy00ZWIyLTg5YzMtNjlmNWNjM2I2OWI3LmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/circle-plans-to-cover-missing-liquidity-in-silicon-valley-bank-with-corporate-funds" target="_blank" rel="nofollow" class="mcw-n-title">Circle plans to cover missing liquidity in Silicon Valley Bank with corporate funds</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 6 hours ago</div>
+<div class="mcw-n-text">According to Circle, USDC liquidity operations will &#8220;resume as normal when banks open on Monday morning in the United States,&#8221; enabling USDC redemption at 1:1&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/aave-freezes-stablecoin-trading-on-avalanche-v3-as-activity-surges-on-cexs" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvYzlhNDJlZmEtM2U2Mi00NjM4LWEyODYtNjViMzVlY2U3NDk0LmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/aave-freezes-stablecoin-trading-on-avalanche-v3-as-activity-surges-on-cexs" target="_blank" rel="nofollow" class="mcw-n-title">Aave freezes stablecoin trading on Avalanche V3 as activity surges on CEXs</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 7 hours ago</div>
+<div class="mcw-n-text">The trading freeze follows an analysis from DeFi&#8217;s risk manager firm Gauntlet Network considering different scenarios for the USD Coin price. Lending protocol Aave has&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/usdc-slowly-repegs-on-unconfirmed-reports-of-svb-resolution" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvYjg0ZTMyYTItZDZiNS00NGQ1LWJmODAtOGVjZWNmMTgzNjRmLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/usdc-slowly-repegs-on-unconfirmed-reports-of-svb-resolution" target="_blank" rel="nofollow" class="mcw-n-title">USDC slowly repegs on unconfirmed reports of SVB resolution</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 8 hours ago</div>
+<div class="mcw-n-text">According to insiders, 50% of uninsured deposits will be paid out by next week. According to a post on Mar. 11 by Bob Elliot, chief&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/atom-bulls-watch-closely-as-cosmos-interchain-security-prepares-for-march-15-launch" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvZmM5MWQ2ZGItNTlkZS00NDZiLWIyZGUtODdlMWRmMWViNTVhLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/atom-bulls-watch-closely-as-cosmos-interchain-security-prepares-for-march-15-launch" target="_blank" rel="nofollow" class="mcw-n-title">ATOM bulls watch closely as Cosmos interchain security prepares for March 15 launch</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 8 hours ago</div>
+<div class="mcw-n-text">Cosmos governance has approved the v9-Lambda upgrade, including interchain security and possibly kicking off a “virtuous real yield cycle.” The Cosmos community has approved a&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/curve-finance-trading-volume-reaches-7b-historic-high-after-usdc-depeg" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvMzhiNjA4NTYtZGYyMi00MzRkLWEzZWEtZjdjYzI0YmFlNGFjLmpwZWc=.jpeg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/curve-finance-trading-volume-reaches-7b-historic-high-after-usdc-depeg" target="_blank" rel="nofollow" class="mcw-n-title">Curve Finance trading volume reaches $7B historic high after USDC depeg</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 9 hours ago</div>
+<div class="mcw-n-text">The USD Coin depeg led the DeFi protocol to experience a record-breaking daily trading volume as crypto whales fight for assets. Stablecoin swapping pool Curve&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/failed-tech-bank-svb-held-over-5b-for-prominent-crypto-vcs-report" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvZjMzNWIxOWYtNzNkNS00MGJmLWFjYmYtOWZmZjhlY2VkNjUzLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/failed-tech-bank-svb-held-over-5b-for-prominent-crypto-vcs-report" target="_blank" rel="nofollow" class="mcw-n-title">Failed tech bank SVB held over $5B for prominent crypto VCs: Report</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 9 hours ago</div>
+<div class="mcw-n-text">It is unclear how much assets custodied on behalf of crypto VCs are stuck in Silicon Valley Bank. According to a report that began circulating&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/how-to-host-a-decentralized-website" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS9zdG9yYWdlL3VwbG9hZHMvdmlldy83NTY3ODBhNGMzOWM5ZGQxZmZkZWE2MjBlOGMyZmNlMy5qcGc=.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/how-to-host-a-decentralized-website" target="_blank" rel="nofollow" class="mcw-n-title">How to host a decentralized website</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 10 hours ago</div>
+<div class="mcw-n-text">Explore decentralized web hosting and how it distributes data securely across a network of nodes. Decentralized websites rely on decentralized networks rather than centralized servers&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/crypto-whales-suffer-huge-losses-due-to-usdc-depeg-svb-collapse" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvYjVhZGQyMDYtZmFiNS00ODZkLTg2ZjUtNjJmNmRkYjQxYTg2LmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/crypto-whales-suffer-huge-losses-due-to-usdc-depeg-svb-collapse" target="_blank" rel="nofollow" class="mcw-n-title">Crypto whales suffer huge losses due to USDC depeg, SVB collapse</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 10 hours ago</div>
+<div class="mcw-n-text">The depegging of the USDC stablecoin has affected other stablecoins, wreaking havoc on crypto projects and stakeholders in a massive chain reaction. In response to&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/banks-down-that-is-why-bitcoin-was-created-crypto-community-says" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvNTZlNDlkOTQtMjc5OS00ZTBmLWIxYmUtNDE2Zjg2YTFjYjJjLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/banks-down-that-is-why-bitcoin-was-created-crypto-community-says" target="_blank" rel="nofollow" class="mcw-n-title">Banks down? That is why Bitcoin was created, crypto community says</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 12 hours ago</div>
+<div class="mcw-n-text">The Silicon Valley Bank collapse on March 10 has sparked fear, uncertainty and doubt across the crypto community. The Silicon Valley Bank (SVB) collapse on&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/why-is-bitcoin-price-up-today" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjItMTAvMjk3NTY5OWMtYWJkZC00ZjdiLWJkMzUtNzQyNjdhNTcwMTE3LmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/why-is-bitcoin-price-up-today" target="_blank" rel="nofollow" class="mcw-n-title">Why is Bitcoin price up today?</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 12 hours ago</div>
+<div class="mcw-n-text">Bitcoin price is up today as the initial shock of the SVB crisis gives way to a BTC price recovery above $20,000 — how could&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/aavegotchi-bonding-curve-closes-on-exact-day-of-dai-depeg" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvMWRhMDkxNDYtNWY4Yy00MzJmLThlM2YtMTljNDQzY2RlZGZlLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/aavegotchi-bonding-curve-closes-on-exact-day-of-dai-depeg" target="_blank" rel="nofollow" class="mcw-n-title">Aavegotchi bonding curve closes on exact day of DAI depeg</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 12 hours ago</div>
+<div class="mcw-n-text">The DAI stablecoin supported the price of GHST for over two years. According to play-to-earn nonfungible token (NFT) protocol Aavegotchi, on March 11, the entity&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/ethereum-layer-2-solutions-may-focus-less-on-token-incentives-in-the-future" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvMzA4MTMzYWMtNDEyOS00MDFkLWFhYTUtODMxMjY5MjI0MjUxLmpwZWc=.jpeg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/ethereum-layer-2-solutions-may-focus-less-on-token-incentives-in-the-future" target="_blank" rel="nofollow" class="mcw-n-title">Ethereum layer-2 solutions may focus less on token incentives in the future</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 13 hours ago</div>
+<div class="mcw-n-text">Token incentive models may become obsolete as layer-2 networks focus on ease of functionality and low fees, but how will this impact decentralization? Layer-2 networks&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/maker-dao-files-emergency-proposal-addressing-3-1b-usdc-exposure" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvNmQwYTQ0ZGYtMDE5NC00YzBiLWEwYmQtNjI4YjU4YzA2YzM3LmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/maker-dao-files-emergency-proposal-addressing-3-1b-usdc-exposure" target="_blank" rel="nofollow" class="mcw-n-title">MakerDAO files emergency proposal addressing 3.1B USDC exposure</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 14 hours ago</div>
+<div class="mcw-n-text">“Proposal(s) implementing the above changes are expected to be posted in the next ~12 hours or less,” says MakerDAO. According to a forum post from&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/bitcoin-price-spikes-to-26k-in-usdc-terms-how-high-can-the-btc-short-squeeze-go" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvMzc1OTk0NzItNTAxZi00YTljLTliZDItZmIyNTVkNDUyZDljLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/bitcoin-price-spikes-to-26k-in-usdc-terms-how-high-can-the-btc-short-squeeze-go" target="_blank" rel="nofollow" class="mcw-n-title">Bitcoin price spikes to ‘$26K’ in USDC terms — How high can the BTC short squeeze go?</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 16 hours ago</div>
+<div class="mcw-n-text">Bitcoin recovers from the USDC’s depeg from the U.S. dollar. Bitcoin (BTC) refused to let $20,000 support die for good on March 11 as the&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/what-is-ethical-hacking-and-how-does-it-work" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvN2MyMTc0NWYtYjg1OS00ZjY0LWJjNDctNTBiZDIzYzY5NjVlLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/what-is-ethical-hacking-and-how-does-it-work" target="_blank" rel="nofollow" class="mcw-n-title">What is ethical hacking, and how does it work?</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 16 hours ago</div>
+<div class="mcw-n-text">Ethical hacking is the practice of identifying and testing vulnerabilities in a system to improve its security and prevent unauthorized access. Ethical hacking, also known&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/circle-s-usdc-instability-causes-domino-effect-on-dai-usdd-stablecoins" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvNThhNjQ1YjgtYjhhOS00YjNiLWJmZWEtMzlkYWE4MDExNmE4LmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/circle-s-usdc-instability-causes-domino-effect-on-dai-usdd-stablecoins" target="_blank" rel="nofollow" class="mcw-n-title">Circle’s USDC instability causes domino effect on DAI, USDD stablecoins</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 16 hours ago</div>
+<div class="mcw-n-text">Following USDC’s depegging, three stablecoins — DAI, USDD and FRAX — also depegged from the U.S. dollar. The stablecoin ecosystem felt an immediate effect as&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/usdc-investor-shells-out-2m-to-receive-0-05-usdt-trying-to-evade-crash" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvYjE3YzRmNzktNDVhOS00ZjZhLWFkYmMtYzIyNmZkNzY3OGZmLkpQRw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/usdc-investor-shells-out-2m-to-receive-0-05-usdt-trying-to-evade-crash" target="_blank" rel="nofollow" class="mcw-n-title">USDC investor shells out $2M to receive $0.05 USDT trying to evade crash</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 19 hours ago</div>
+<div class="mcw-n-text">While the crypto market responded with a massive sell-off, not all USDC investors were lucky enough to walk away with their funds amid the uncertainty.&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/sen-warren-calls-out-sham-audits-while-svb-threatens-crypto-bankruptcy" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvNjliZGVkYjQtNTc2NC00YjU3LWJhMjQtNTNjZGUzYTllNTM5LmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/sen-warren-calls-out-sham-audits-while-svb-threatens-crypto-bankruptcy" target="_blank" rel="nofollow" class="mcw-n-title">Sen. Warren calls out ‘sham audits’ while SVB threatens crypto bankruptcy</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 20 hours ago</div>
+<div class="mcw-n-text">Contrasting Warren’s statements against crypto auditors, numerous members highlighted the ongoing collapse of Silicon Valley Bank (SVB), a Federal Deposit Insurance Corporation-insured bank. United States&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/coinbase-reiterates-that-staking-services-will-continue-despite-sec-crackdown" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvMzUxYTcyNDItZjFkMi00ZTBhLWEyYTQtOTZmZjEwNmVlOGMyLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/coinbase-reiterates-that-staking-services-will-continue-despite-sec-crackdown" target="_blank" rel="nofollow" class="mcw-n-title">Coinbase reiterates that staking services will continue, despite SEC crackdown</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 21 hours ago</div>
+<div class="mcw-n-text">Despite the SEC looking to crack down on supposed unregistered securities offerings via staking rewards programs, Coinbase has outlined that its services will continue. Despite&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/usdc-depegs-as-circle-confirms-3-3b-stuck-with-silicon-valley-bank" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvODY5MjMzZDUtN2EwMC00OGU0LTkwZGYtNDRkMmJmZDVhMmIwLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/usdc-depegs-as-circle-confirms-3-3b-stuck-with-silicon-valley-bank" target="_blank" rel="nofollow" class="mcw-n-title">USDC depegs as Circle confirms $3.3B stuck with Silicon Valley Bank</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 22 hours ago</div>
+<div class="mcw-n-text">At the time of writing, USDC had lost over 10% of its value as it traded at $0.8774, and a Circle executive envisions broader implications&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/circle-discloses-3-3b-tied-up-at-silicon-valley-bank" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvYTYyNTgyYmUtNGNiYy00N2Q2LWJmNDItODczNzE5YzY3ZDg1LmpwZWc=.jpeg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/circle-discloses-3-3b-tied-up-at-silicon-valley-bank" target="_blank" rel="nofollow" class="mcw-n-title">Breaking: Circle discloses $3.3B tied up at Silicon Valley Bank</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 23 hours ago</div>
+<div class="mcw-n-text">Circle joined other customers and depositors in calling for the continuity of SVB in the U.S. economy. On March 10, Blockchain payment tech company and&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/filing-shows-blockfi-has-uninsured-227m-in-silicon-valley-bank-mmmf" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvOWMxZWNlYWEtOTdhZC00MWI0LThjZjMtNjQxZDM1ZjEzZGVkLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/filing-shows-blockfi-has-uninsured-227m-in-silicon-valley-bank-mmmf" target="_blank" rel="nofollow" class="mcw-n-title">Filing shows BlockFi has uninsured $227M in Silicon Valley Bank fund</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 1 day ago</div>
+<div class="mcw-n-text">BlockFi’s capital allocated to the money market mutual fund is not FDIC insured; however, the fund doesn’t appear to be managed by Silicon Valley Bank.&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/920b-is-the-number-to-watch-now-that-crypto-s-trillion-dollar-total-market-cap-is-gone" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvMzdjOWVlMGItNDY4Ni00MGM5LTg3MmEtMzk3ZjU3OGY2ZjljLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/920b-is-the-number-to-watch-now-that-crypto-s-trillion-dollar-total-market-cap-is-gone" target="_blank" rel="nofollow" class="mcw-n-title">$920B is the number to watch now that crypto’s trillion-dollar total market cap is gone</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 1 day ago</div>
+<div class="mcw-n-text">The crypto market is taking a walloping, and there are three important reasons why BTC’s $380 billion valuation is a crucial support for the entire&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/sam-bankman-fried-s-bail-conditions-still-too-lenient-says-judge" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvZmFlOGNkNjYtOGQzMi00YmVmLTg5MDgtNTQ2MGVhNTU3NjYxLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/sam-bankman-fried-s-bail-conditions-still-too-lenient-says-judge" target="_blank" rel="nofollow" class="mcw-n-title">Sam Bankman-Fried’s bail conditions still too lenient, says judge</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 1 day ago</div>
+<div class="mcw-n-text">U.S. District Judge Lewis Kaplan expressed concern that SBF could find ways to evade the restrictions and covertly communicate with others electronically. On March 10,&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/sec-disapproves-vaneck-spot-btc-trust-product-commissioners-see-double-standard" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvZmQ3OGVmMmMtMTJiZi00Mjg1LWEwZTMtNjI5Y2QwYTZhZDMyLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/sec-disapproves-vaneck-spot-btc-trust-product-commissioners-see-double-standard" target="_blank" rel="nofollow" class="mcw-n-title">SEC denies VanEck spot BTC trust product, commissioners see double standard</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 1 day ago</div>
+<div class="mcw-n-text">SEC Commissioners Mark Uyeda and Hester Peirce have issued a joint statement highlighting discrepancies they see in the application of standards to applicants for ETPs.&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://cointelegraph.com/news/crypto-funding-shifts-from-cefi-to-defi-after-major-collapses-finance-redefined" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://images.cointelegraph.com/images/840_aHR0cHM6Ly9zMy5jb2ludGVsZWdyYXBoLmNvbS91cGxvYWRzLzIwMjMtMDMvNGI1MjQ1MTgtMWZkNi00MWY2LWJiZWYtYTI0NjQzNzc2MGRhLmpwZw==.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://cointelegraph.com/news/crypto-funding-shifts-from-cefi-to-defi-after-major-collapses-finance-redefined" target="_blank" rel="nofollow" class="mcw-n-title">Crypto funding shifts from CeFi to DeFi after major collapses: Finance Redefined</a><div class="mcw-n-stat">Cointelegraph.com News &#8211; 1 day ago</div>
+<div class="mcw-n-text">The majority of the DeFi tokens in the top 100 traded in the red on the weekly charts due to a downturn in the broader&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://ambcrypto.com/decentraland-mana-falls-to-half-dollar-value-can-bulls-prevail/" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://ambcrypto.com/wp-content/uploads/2023/03/julien-tromeur-EOSHmMbjT8g-unsplash-scaled-e1678534344224.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://ambcrypto.com/decentraland-mana-falls-to-half-dollar-value-can-bulls-prevail/" target="_blank" rel="nofollow" class="mcw-n-title">Decentraland [MANA] falls to half-dollar value- Can bulls prevail?</a><div class="mcw-n-stat">AMBCrypto &#8211; 2 hours ago</div>
+<div class="mcw-n-text">Disclaimer: The information presented does not constitute financial, investment, trading, or other types of advice and is solely the writer’s opinion The daily chart was&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://ambcrypto.com/fantom-ftm-more-addresses-and-transactions-but-what-about-defi-tvl/" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://ambcrypto.com/wp-content/uploads/2023/03/larry-costales-bidi8u2gTwc-unsplash-1.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://ambcrypto.com/fantom-ftm-more-addresses-and-transactions-but-what-about-defi-tvl/" target="_blank" rel="nofollow" class="mcw-n-title">Fantom [FTM]: More addresses and transactions, but what about DeFi TVL</a><div class="mcw-n-stat">AMBCrypto &#8211; 4 hours ago</div>
+<div class="mcw-n-text">Fantom has seen increased ecosystem growth in the last month. FTM&#8217;s price, however, continues to plummet. Following the launch of its go-opera version 1.1.2-rc.5 mainnet&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://ambcrypto.com/bitcoin-ordinals-could-help-btc-miners-in-the-long-run-heres-how/" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://ambcrypto.com/wp-content/uploads/2023/03/bitcoin-3132574_1920-e1678544895848.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://ambcrypto.com/bitcoin-ordinals-could-help-btc-miners-in-the-long-run-heres-how/" target="_blank" rel="nofollow" class="mcw-n-title">Bitcoin Ordinals could help BTC miners in the long-run- Here’s how</a><div class="mcw-n-stat">AMBCrypto &#8211; 6 hours ago</div>
+<div class="mcw-n-text">Ordinals inscriptions have surpassed 411,000. Its contribution to transaction fees over the past week has also exceeded 6%. Ordinals and other Layer 2 solutions have&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://ambcrypto.com/circle-will-cover-funds-shortfall-caused-by-silicon-valley-bank-collapse/" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://ambcrypto.com/wp-content/uploads/2023/03/alexander-schimmeck-H_KabGs8FMw-unsplash-scaled-e1678568812638.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://ambcrypto.com/circle-will-cover-funds-shortfall-caused-by-silicon-valley-bank-collapse/" target="_blank" rel="nofollow" class="mcw-n-title">Circle will cover funds shortfall caused by Silicon Valley Bank collapse</a><div class="mcw-n-stat">AMBCrypto &#8211; 6 hours ago</div>
+<div class="mcw-n-text">Circle stated that it initiated to transfer of $3.3 billion funds remaining in SVB However, the transfer was not processed as of Friday and the&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://ambcrypto.com/dai-namic-shift-makerdaos-stablecoin-supply-drops-50-thanks-to/" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://ambcrypto.com/wp-content/uploads/2023/03/david-barajas-q_klhRcIdbY-unsplash-1.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://ambcrypto.com/dai-namic-shift-makerdaos-stablecoin-supply-drops-50-thanks-to/" target="_blank" rel="nofollow" class="mcw-n-title">DAI-namic Shift: MakerDAO’s stablecoin supply drops 50%, thanks to…</a><div class="mcw-n-stat">AMBCrypto &#8211; 7 hours ago</div>
+<div class="mcw-n-text">DAI&#8217;s supply has fallen by 50% from the 2022 peak. MKR suffers increased distribution causing its price to plummet.  Due to the decline in the&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://ambcrypto.com/opensea-fixes-a-major-vulnerability-that-could-have-leaked-your-identity/" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://ambcrypto.com/wp-content/uploads/2023/03/piggybank-jdaeD1ASlIU-unsplash-1-e1678521769126.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://ambcrypto.com/opensea-fixes-a-major-vulnerability-that-could-have-leaked-your-identity/" target="_blank" rel="nofollow" class="mcw-n-title">OpenSea fixes a major vulnerability that could have leaked your identity</a><div class="mcw-n-stat">AMBCrypto &#8211; 9 hours ago</div>
+<div class="mcw-n-text">The loophole on OpenSea when successfully exploited could have allowed the attacker to obtain the identities of users. OpenSea quickly fixed the issue after the&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://ambcrypto.com/kazakhstan-shuts-down-illegal-crypto-exchange-seizes-350000/" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://ambcrypto.com/wp-content/uploads/2023/03/simon-sun-dZdnoZbUk2w-unsplash-e1678540852120.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://ambcrypto.com/kazakhstan-shuts-down-illegal-crypto-exchange-seizes-350000/" target="_blank" rel="nofollow" class="mcw-n-title">Kazakhstan shuts down illegal crypto exchange, seizes $350,000</a><div class="mcw-n-stat">AMBCrypto &#8211; 11 hours ago</div>
+<div class="mcw-n-text">Kazakhstan has identified and shut down ABS Change, a platform that was illegally trading cryptocurrencies. Three Kazakhstani citizens have been charged with running the exchange,&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://ambcrypto.com/bitcoins-tumble-takes-investors-on-a-wild-ride-bulls-and-bears-square-off/" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://ambcrypto.com/wp-content/uploads/2023/03/shubham-s-web3-4cVAiWdMJqk-unsplash-1.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://ambcrypto.com/bitcoins-tumble-takes-investors-on-a-wild-ride-bulls-and-bears-square-off/" target="_blank" rel="nofollow" class="mcw-n-title">Bitcoin’s tumble takes investors on a wild ride: bulls and bears square off</a><div class="mcw-n-stat">AMBCrypto &#8211; 12 hours ago</div>
+<div class="mcw-n-text">BTC traded briefly below the $20,000 price level on 10 March, leading to significant long liquidations. On the daily chart, increased coin sell-offs were spotted. &hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://ambcrypto.com/all-about-digitoads-and-its-450-price-increase-prediction/" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://ambcrypto.com/wp-content/uploads/2023/03/Screenshot-2023-03-11-at-2.02.57-PM-e1678523611174.png);"></div></a><div class="mcw-n-content">
+<a href="https://ambcrypto.com/all-about-digitoads-and-its-450-price-increase-prediction/" target="_blank" rel="nofollow" class="mcw-n-title">All about Digitoads and it’s 450% price increase prediction</a><div class="mcw-n-stat">AMBCrypto &#8211; 12 hours ago</div>
+<div class="mcw-n-text">The world of cryptocurrency is rapidly evolving, and new projects are emerging daily. Among the latest projects is DigiToads, a meme coin built to positively&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://ambcrypto.com/coinbase-reiterates-staking-services-will-continue-despite-secs-crackdown/" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://ambcrypto.com/wp-content/uploads/2023/03/wolfgang-hasselmann-lRFVNY9Wo_w-unsplash-e1678539755795.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://ambcrypto.com/coinbase-reiterates-staking-services-will-continue-despite-secs-crackdown/" target="_blank" rel="nofollow" class="mcw-n-title">Coinbase reiterates ‘staking services will continue,’ despite SEC’s crackdown</a><div class="mcw-n-stat">AMBCrypto &#8211; 13 hours ago</div>
+<div class="mcw-n-text">Coinbase reiterated to customers that its staking services will continue, and may actually increase, despite SEC&#8217;s crackdown. The exchange explicitly stated that its users earn&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/11/circle-to-cover-any-shortfall-in-usdc-reserves-sparking-stablecoin-rally/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/vvhWNlkLeQUSHABw2fPPB1KxrGQ=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/76ZNFHBYWNFZ3AHCNTN5FV2JP4.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/11/circle-to-cover-any-shortfall-in-usdc-reserves-sparking-stablecoin-rally/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Circle to ‘Cover Any Shortfall’ in USDC Reserves, Sparking Stablecoin Rally</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 6 hours ago</div>
+<div class="mcw-n-text">The company plans to use corporate resources to fill the gap, including external capital.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/11/bitcoin-regains-20k-after-200m-in-crypto-liquidations-some-traders-brush-off-usdc-fears/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/IKkfoKnMJZ-w8PEzbP5bVnBI_TU=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/VTT7AVF2HZHDLKVPL5DNGROYUU.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/11/bitcoin-regains-20k-after-200m-in-crypto-liquidations-some-traders-brush-off-usdc-fears/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Bitcoin Regains $20K After $200M in Crypto Liquidations; Some Traders Brush Off USDC Fears</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 14 hours ago</div>
+<div class="mcw-n-text">Some traders are signaling strength for USD Coin, citing its treasury backing in U.S.-issued bonds.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/11/traders-bet-on-usd-coin-rebound-as-usdc-falls-to-90-cents/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/4tBmo9NGovtHB1sVa8Y5dSFe5Ns=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/4VGLG67RPFAUTAFPWSN6NXPGJE.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/11/traders-bet-on-usd-coin-rebound-as-usdc-falls-to-90-cents/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Traders Bet on USD Coin Rebound as USDC Falls to 90 Cents</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 16 hours ago</div>
+<div class="mcw-n-text">Some $4 million in USDC futures were liquidated in the past 24 hours, Coinglass data shows.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/11/dai-depegs-as-stablecoin-rout-plagues-crypto/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/tfFFLn81qtJF_bP2sorzji2ka98=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/DHABVFA6F5HTVMOEFLV7FFGA6E.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/11/dai-depegs-as-stablecoin-rout-plagues-crypto/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">DAI Depegs to Lifetime Lows as Stablecoin Rout Plagues Crypto</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 17 hours ago</div>
+<div class="mcw-n-text">MakerDAO’s decentralized stablecoin hits an all-time low of 0.88 cents.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/policy/2023/03/11/us-lawmakers-met-with-fed-fdic-to-discuss-collapse-of-silicon-valley-bank-source/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/uB_GBA1QDAKW58pIk3G_xCxmvqM=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/PGTMSCUJ65ECLF7WFRD6BVM4GE.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/policy/2023/03/11/us-lawmakers-met-with-fed-fdic-to-discuss-collapse-of-silicon-valley-bank-source/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">U.S. Lawmakers Met With Fed, FDIC to Discuss Collapse of Silicon Valley Bank: Source</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 21 hours ago</div>
+<div class="mcw-n-text">Rep. Maxine Waters convened meetings with federal bank regulators in the wake of the bank&#8217;s collapse.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/11/usdc-stablecoin-and-crypto-market-go-haywire-after-silicon-valley-bank-collapses/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/iR-yWvzroEpOMOSvDQ1aiQqyiNY=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/UZV6BYH545CZ5E5JJ4CLYJGS4M.png);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/11/usdc-stablecoin-and-crypto-market-go-haywire-after-silicon-valley-bank-collapses/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">USDC Stablecoin Depegs, Crypto Market Goes Haywire After Silicon Valley Bank Collapses</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 21 hours ago</div>
+<div class="mcw-n-text">USDC&#8217;s normally stable price sank to $0.89 from $1 while Ethereum gas fees soared hours after the crypto-tied bank failed.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/11/coinbase-pauses-conversions-between-usdc-and-us-dollars-as-banking-crisis-roils-crypto/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/vGl2fscnIMZGAGUfVhhuEXmrY7M=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/WYJHENQAORANDHJEP6HRFVOFSA.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/11/coinbase-pauses-conversions-between-usdc-and-us-dollars-as-banking-crisis-roils-crypto/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Coinbase Pauses Conversions Between USDC and U.S. Dollars as Banking Crisis Roils Crypto</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 23 hours ago</div>
+<div class="mcw-n-text">Circle&#8217;s USDC stablecoin was hit by the shutdown of Silicon Valley Bank, one of its key banking partners.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/11/circle-confirms-33b-of-usdcs-cash-reserves-stuck-at-failed-silicon-valley-bank/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/vCrOmdB7mE8mEi782F8G8uWMqJs=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/SKKHR6GTMJADXDWUWFMQVQXNGE.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/11/circle-confirms-33b-of-usdcs-cash-reserves-stuck-at-failed-silicon-valley-bank/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Circle Confirms $3.3B of USDC&#039;s Cash Reserves Stuck at Failed Silicon Valley Bank</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 23 hours ago</div>
+<div class="mcw-n-text">Silicon Valley Bank, one of the reserve banking partner for Circle&#8217;s USDC stablecoin, was shut down by regulators on Friday.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/11/circles-usdc-endured-1b-of-net-redemptions-since-silicon-valley-banks-shutdown/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/mhvTsZv0YRkXlqhsZrQAwYnQ10g=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/4UX5T7RYMJHERGKRW2M6XH3DTU.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/11/circles-usdc-endured-1b-of-net-redemptions-since-silicon-valley-banks-shutdown/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Circle’s USDC Endured $1B of Net Redemptions Since Silicon Valley Bank&#039;s Shutdown</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Stablecoin issuer Circle held an undisclosed amount of USDC’s cash reserves at failed Silicon Valley Bank.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/11/usdc-issuer-circle-says-it-awaits-clarity-from-fdic-on-silicon-valley-bank-collapse/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/xo0fP_rhQrUzlNfUxR8fTXDCS3k=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/WXIHMZXSFRAMTNM5VFAZT5X3YA.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/11/usdc-issuer-circle-says-it-awaits-clarity-from-fdic-on-silicon-valley-bank-collapse/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">USDC Issuer Circle Says it &#039;Awaits Clarity&#039; From FDIC on Silicon Valley Bank Collapse</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">In its first statement following the collapse of Silicon Valley Bank, Circle declined to state how much cash it has tied up at the bank.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/11/usdc-stablecoin-depegs-from-1-circle-says-operations-are-normal/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/4tBVckofwQsM3295ZBa8CsOfU7Q=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/YD3JAZG6YVAQPEFPQYYB4J5CYE.png);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/11/usdc-stablecoin-depegs-from-1-circle-says-operations-are-normal/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">USDC Stablecoin Depegs From $1; Circle Says Operations Are Normal</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">USDC dropped to $0.973, its lowest level since the collapse of FTX.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/consensus-magazine/2023/03/10/who-failed-silicon-valley-bank-depositors/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/6yUltGU2j8kwYnjzZGtfujTuImw=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/ZKLVP752HRB43JZW5NV767GUDQ.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/consensus-magazine/2023/03/10/who-failed-silicon-valley-bank-depositors/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Who Failed Silicon Valley Bank Depositors?</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Should we point fingers at Silicon Valley Bank, the Federal Reserve, the banking system, crypto or the depositors themselves?</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/10/crypto-vc-firm-pantera-used-silicon-valley-bank-as-a-custodian/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/LXdrHaRNIXJsjLITdJDH2XRNzn8=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/NH6U7M7ICBFOBF6SNRUBIBH63I.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/10/crypto-vc-firm-pantera-used-silicon-valley-bank-as-a-custodian/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Crypto VC Firm Pantera Used Silicon Valley Bank as a Custodian</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">A regulatory filing shows the shuttered bank as one of three custodians for Pantera’s funds.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/10/defi-protocol-curves-500m-stablecoin-pool-hammered-as-traders-flee-usdc/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/3M-dGxSFn7Txle4fBrBerTi5K4k=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/4DGGUGUWR5CNFPFPRFSUF2TK7Q.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/10/defi-protocol-curves-500m-stablecoin-pool-hammered-as-traders-flee-usdc/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">DeFi Protocol Curve’s $500M Stablecoin Pool Hammered as Traders Flee USDC</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Curve&#8217;s 3pool is supposed to have equal parts USDC, DAI and USDT. The trio are becoming imbalanced amid fallout from Silicon Valley Bank&#8217;s collapse.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/tech/2023/03/10/how-silvergates-crypto-collapse-differed-from-silicon-valley-banks-no-us-government-bailout/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/89Umq-DCcWNzZnhnt6KKNAuJfAQ=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/5WFGVPMUQZHT5GR7P2GZCRSMDE.png);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/tech/2023/03/10/how-silvergates-crypto-collapse-differed-from-silicon-valley-banks-no-us-government-bailout/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">How Silvergate’s Crypto Collapse Differed From Silicon Valley Bank’s: No Bailout</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">For all the angst this week about how troubles in the crypto industry are fueling a banking crisis, the reality, so far, is actually something&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/policy/2023/03/10/ether-a-security-that-could-have-huge-ramifications-for-crypto-legal-expert-says/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/h4Zh1wVKAd4VcimLxOQfzLmjLZo=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/6UFTK6SEQZGTTGQHUC3HF3K36M.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/policy/2023/03/10/ether-a-security-that-could-have-huge-ramifications-for-crypto-legal-expert-says/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Ether a Security? That Could Have Huge Ramifications for Crypto, Legal Expert Says</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Should ether be deemed a security at the state level, it may lead to federal laws ultimately being settled in, Pennsylvania State University Dickinson Law&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/10/crypto-wallets-withdraw-902m-usdc-from-centralized-exchanges-in-past-24-hours-amid-svb-silvergate-shutdowns/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/TqY9jtGvE4eD3S1GpH2aSyKAiGo=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/Z6ROK5CLQFAHLPSJ7EWQC3NNM4.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/10/crypto-wallets-withdraw-902m-usdc-from-centralized-exchanges-in-past-24-hours-amid-svb-silvergate-shutdowns/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Crypto Wallets Withdraw $902M USDC From Centralized Exchanges in Past 24 Hours Amid SVB, Silvergate Shutdowns</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">$11.4 billion of USDC reserves are held in the form of cash at Reserve Banks, which include the two members of the Federal Reserve System.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/10/scrutiny-falls-on-43b-usdc-stablecoins-cash-reserves-at-failed-silicon-valley-bank/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/LsWw_Twsugt1qXOKcENqSN5bNmA=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/FYJF3KTE2BERRNEGQZE2G2IUYI.png);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/10/scrutiny-falls-on-43b-usdc-stablecoins-cash-reserves-at-failed-silicon-valley-bank/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Scrutiny Falls on $43B USDC Stablecoin’s Cash Reserves at Failed Silicon Valley Bank</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Circle’s USDC, the second largest stablecoin with $43 billion market capitalization, held an undisclosed part of its $9.8 billion cash reserves at failed Silicon Valley&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/consensus-magazine/2023/03/10/a-tale-of-2-banks-why-silvergate-and-silicon-valley-bank-collapsed/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/Pd70kzNdhL1aGN0fmkQsK3sNMZo=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/3PKL6FQIX5HMFKSCPGALWTISEQ.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/consensus-magazine/2023/03/10/a-tale-of-2-banks-why-silvergate-and-silicon-valley-bank-collapsed/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">A Tale of 2 Banks: Why Silvergate and Silicon Valley Bank Collapsed</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Every U.S. bank is facing similar structural pressures to what drove crypto’s one-time favorite bank to the moon &#8211; then into the ground.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/consensus-magazine/2023/03/10/how-us-judges-might-save-crypto-from-the-sec/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/8z5NIM00x0zRvgTdcSBlLLlzHx4=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/2YCDUOWWWZGUBME4YT5IFSFQYM.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/consensus-magazine/2023/03/10/how-us-judges-might-save-crypto-from-the-sec/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">How U.S. Judges Might Save Crypto From the SEC</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Separation-of-powers offers hope to the crypto industry, which is under attack from unchecked executive power. Two separate courtrooms in which judges, guided by an impartial&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/10/defi-stablecoin-exchange-mstable-expects-4-buyout-bids-source/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/19xYsprdCtwLaum57HnajdirjlE=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/2P7IR4I37VAM7LVPUEUXVEXZ7Y.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/10/defi-stablecoin-exchange-mstable-expects-4-buyout-bids-source/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">DeFi Stablecoin Exchange mStable Expects 4 Buyout Bids: Source</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Troubled DeFi stablecoin exchange mStable has been searching for a buyer after its founder announced he would leave at the end of March.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/policy/2023/03/10/silicon-valley-bank-shuttered-by-state-regulators/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/3U_mL2Q7KlvzhJ-GpRU4uaq-_J0=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/VO5H3SFKYFHDHJ3XCYT5CFZQFU.png);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/policy/2023/03/10/silicon-valley-bank-shuttered-by-state-regulators/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Silicon Valley Bank Shuttered by State Regulators</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Silicon Valley Bank was shuttered by the California Department of Financial Protection and Innovation on Friday, marking the second bank to shut down within days.&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/10/signature-bank-stock-down-12-in-volatile-action-as-bank-selloff-continues/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/UjT1xNLJKOFCzRqikMGZP8wwqu8=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/5B572SZQW5BWRO4SUWUP5G4ZSI.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/10/signature-bank-stock-down-12-in-volatile-action-as-bank-selloff-continues/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Signature Bank Stock Down 12% in Volatile Action as Sell-Off Continues</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">SBNY shares sank as low as $64.60 at 14:45 UTC on Friday, a drop of around 28% from its opening price of just over $90.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/tech/2023/03/10/reviewing-code-is-mind-numbing-qa-with-bitcoin-maintainer-andrew-chow/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/QNCTswopaOmOOpwoh1RxdgMOpb8=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/R4BDILPQ6JCLJI3YELAT2YPX64.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/tech/2023/03/10/reviewing-code-is-mind-numbing-qa-with-bitcoin-maintainer-andrew-chow/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Reviewing Code Is Mind-Numbing: Q&amp;A With Bitcoin Maintainer Andrew Chow</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">He stumbled upon Bitcoin in high school while looking for ways to pay for his favorite video games. He now reviews and improves Bitcoin’s code&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/10/on-chain-liquidations-beckon-as-ether-slumps-to-2-month-low/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/guZWqjqPeJb8xCMw7S3IycVSlik=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/MPYJYVIYSBCLXJUPZLO45XG3KY.png);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/10/on-chain-liquidations-beckon-as-ether-slumps-to-2-month-low/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">On-Chain Liquidations Beckon as Ether Slumps to 2-Month Low</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Several on-chain positions are at risk of being liquidated following ether&#8217;s plunge to a two-month low of $1,373.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/policy/2023/03/10/banks-shouldnt-punish-crypto-industry-republican-senators-urge/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/U-_4HrYBH_BEbk2K7fpjLKVv_jY=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/WRK4PMNYHVDBNGM6TWSTT6J3OA.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/policy/2023/03/10/banks-shouldnt-punish-crypto-industry-republican-senators-urge/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Banks Shouldn’t ‘Punish’ Crypto Industry, Republican Senators Urge</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">A crackdown on digital assets companies is reminiscent of “choke point” targeting of gun sales, Fed Governor Jerome Powell was told.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/10/bitcoin-bounces-as-us-adds-311k-jobs-in-march-beating-expectations/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/Pfv6myUsx3MoNDtWt5bcqk72wGI=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/VEQJHWCD4BB7PGRQDN75JWNUD4.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/10/bitcoin-bounces-as-us-adds-311k-jobs-in-march-beating-expectations/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Bitcoin Bounces as U.S. Adds 311K Jobs in February, Beating Expectations</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">The unemployment rate fell/rose/held steady to 3.X% &#8230;.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/10/first-mover-americas-bitcoin-battered-as-markets-spiral/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/BNua9glVJ6zrTmJVFriwQW2RgIM=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/ZPDJNZM43NA4VDGV7NA3CTQP3U.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/10/first-mover-americas-bitcoin-battered-as-markets-spiral/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">First Mover Americas: Bitcoin Battered as Markets Spiral</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">The latest price moves in bitcoin (BTC) and crypto markets in context for March 10, 2023. First Mover is CoinDesk’s daily newsletter that contextualizes the&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/10/cathie-woods-ark-purchases-over-350k-coinbase-shares-in-biggest-buy-of-2023/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/m8_CcGqJChbZlaSHoHRn_iIcceU=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/7FRJAVQYJRD5HNMRTINWCDAHNA.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/10/cathie-woods-ark-purchases-over-350k-coinbase-shares-in-biggest-buy-of-2023/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Cathie Wood&#039;s Ark Invest Buys $22M in Coinbase Shares</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">ARK now owns 9.9 million COIN shares, worth $575 million which is around 3.8% of Coinbase&#8217;s market cap</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/10/replacing-silvergates-network-is-a-challenge-for-crypto-industry-jpmorgan-jpmorgan/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/AMgQBi8JjJESRCjS_FppcKk1tks=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/OJEAC3AQNRH4VNL7RN7GZAT5MY.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/10/replacing-silvergates-network-is-a-challenge-for-crypto-industry-jpmorgan-jpmorgan/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Replacing Silvergate’s Network Is a Challenge for Crypto Industry: JPMorgan</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Some of the services provided by Silvergate will migrate to other banks such as Signature Bank, Provident Bancorp, Metropolitan Commercial Bank and Customers Bancorp, the&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/10/silicon-valley-bank-rocks-crypto-and-equity-markets-ahead-of-nonfarm-payrolls-release/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/J7E2J_AFN0dRAfIX4MPnr6y2X3A=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/OPCYKAIYKJA5ZHMKQQJE53ND6I.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/10/silicon-valley-bank-rocks-crypto-and-equity-markets-ahead-of-nonfarm-payrolls-release/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Silicon Valley Bank Rocks Crypto and Equity Markets Ahead of Jobs Report</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Pressure on the U.S. banking system is questioning whether the Fed can push ahead with such an aggressive tightening cycle, analysts at ING said.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/10/defi-protocol-tenderfi-hacker-returns-16m-following-chainlink-oracle-glitch/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/16Q1mGyDIxbikzaahXAr5mvIZ2A=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/AE4L3V3WYFAN5EEKFNCMCUIDYM.png);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/10/defi-protocol-tenderfi-hacker-returns-16m-following-chainlink-oracle-glitch/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">DeFi Protocol Tender.fi Hacker Returns $1.6M Following Pricing Oracle Glitch</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">A white hat hacker that targeted DeFi protocol Tender.fi has returned $1.6 million that was stolen on Tuesday, receiving a 62.15 ether ($85,000) bug bounty&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/10/finance-is-headed-toward-bank-free-decentralized-future-bernstein/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/qO79EDWheC7Jv2GarXG8K7S2G8g=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/EZHXDXXZSRBRRN3F6LIEEHK7II.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/10/finance-is-headed-toward-bank-free-decentralized-future-bernstein/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Finance Headed Toward Bank-Free, Decentralized Future: Bernstein</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Bank-free decentralized finance will be a trillion-dollar asset pool with over $40 billion in revenue by 2028, the report said.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/web3/2023/03/10/facebook-parent-company-meta-exploring-decentralized-app-report/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/ECciuLmYZ6FmRmauJsg9bW5fOtc=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/GELDZNCPPFA23GPALF5XRTDWE4.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/web3/2023/03/10/facebook-parent-company-meta-exploring-decentralized-app-report/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Facebook Parent Company Meta Exploring Decentralized App: Report</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">The app, codenamed P92, will be a standalone product for sharing text updates</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/10/ether-hits-two-month-low-under-14k-as-coinbase-premium-index-dwindles/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/S_iCefjPRaip4PVOQixhbzIgdnw=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/D5UFFO25ZVFOFLIAJOCC5LVMAI.png);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/10/ether-hits-two-month-low-under-14k-as-coinbase-premium-index-dwindles/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Ether Hits Two-Month Low Under $1.4K as Coinbase Premium Index Dwindles</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">The decline comes as New York Attorney General referred to ETH as security in its lawsuit against the cryptocurrency exchange KuCoin.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/policy/2023/03/10/us-doj-appeals-new-york-judges-decision-to-approve-voyagers-sale-to-binanceus/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/0cI11K54I3P4s-wtRde9Ochc2YM=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/RWMWMNL7RBFA3DIQTLVTKRUBXQ.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/policy/2023/03/10/us-doj-appeals-new-york-judges-decision-to-approve-voyagers-sale-to-binanceus/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">U.S. Justice Dept. Appeals New York Judge’s Decision to Approve Voyager’s Sale to Binance.US</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">The appeal comes just one day after Judge Michael Wiles gave Voyager Digital the go-ahead to sell its assets to Binance.US.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/10/justin-sun-moving-stablecoins-after-promising-to-create-huobi-liquidity-fund/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/Xn8qxd6Ttu8Vh_lBIpBtxWHyxvA=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/M6WOPKLYWRFILESRACKFWZN5TA.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/10/justin-sun-moving-stablecoins-after-promising-to-create-huobi-liquidity-fund/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Justin Sun Completes $100M USDC Transfer to Create Huobi Liquidity Fund</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 1 day ago</div>
+<div class="mcw-n-text">Sun’s USDT is moving after Huobi’s HT Token Dropped 93% and then rebounded.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/10/first-mover-asia-bitcoin-plunges-to-mid-january-levels/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/QAEzK-Mb0qSVQJ-NQjZhEhA3fn4=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/TIPBIVDQKZGEFPK2QDCVZA4Z3Q.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/10/first-mover-asia-bitcoin-plunges-to-mid-january-levels/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">First Mover Asia: Bitcoin Plunges to Mid-January Levels</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">ALSO: CoinDesk analyst Glenn Williams writes that despite the crypto market&#8217;s recent problems, bullish sentiment seems to be prevailing among holders of futures contracts.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/tech/2023/03/09/huobis-ht-token-suddenly-drops-93-then-rebounds-just-as-quickly/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/D7TGPPS3iIhP6OUr0DCYg40DqqA=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/XRUWYHVNIBCDDDYLPSOQ4ZADGU.png);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/tech/2023/03/09/huobis-ht-token-suddenly-drops-93-then-rebounds-just-as-quickly/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Huobi’s HT Token Suddenly Falls 93%, Then Rebounds Just as Quickly</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">Huobi’s HT token, the native token of the cryptocurrency exchange, momentarily dropped 93% on Thursday for reasons that are unclear.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/10/bitcoin-falls-below-20k-as-2023-rally-reverses/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/K3Cqpe_Nrl1i8Fl30-RWFrt1EuI=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/2OYPEQAXTVBKZPXL5WSWHSNOE4.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/10/bitcoin-falls-below-20k-as-2023-rally-reverses/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Bitcoin Falls Below $20K as 2023 Rally Reverses</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">A hawkish Fed, the demise of crypto-friendly Silvergate Bank, and a possible government sale of Silk Road-related bitcoin have investors ample reason to sell.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/09/crypto-traders-suffer-over-300m-of-losses-in-liquidations-amid-market-crash/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/PKJCX22spmNIhyvzoIhDQAByOlI=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/PTVYWUTDE5GAFMA35SWCIDVENY.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/09/crypto-traders-suffer-over-300m-of-losses-in-liquidations-amid-market-crash/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Crypto Traders Suffer Over $300M of Losses in Liquidations Amid Market Crash</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">The largest long liquidation in at least a month suggests that Thursday’s crash in crypto prices caught traders off-guard. Bitcoin traders suffered the most losses,&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/policy/2023/03/09/what-happens-if-ethereum-is-a-security/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/CBKfjBcI58z_3hnGT8lsCQ5nXuc=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/ZKCVA5GV6BFIBK2SUV7EVSNTJ4.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/policy/2023/03/09/what-happens-if-ethereum-is-a-security/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">What Happens if Ether Is a Security?</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">A recent suit filed by the New York Attorney general could have far-ranging complications for crypto exchanges that list ether and similar tokens.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/policy/2023/03/09/us-treasury-department-proposes-30-excise-tax-on-crypto-mining-firms/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/3JmlvowWea4B8nMgfRhJ2gyEeIM=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/ILMBRT5HNVAJFGKVWVN6AE3SNU.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/policy/2023/03/09/us-treasury-department-proposes-30-excise-tax-on-crypto-mining-firms/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">U.S. Treasury Department Proposes 30% Excise Tax on Crypto Mining Firms</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">A provision in the department’s “Greenbook,” its list of tax proposals and explanations for U.S. President Joe Biden’s budget proposal, would create a phased-in excise&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/09/hedera-turns-off-services-after-network-irregularities/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/eVkMTJJfYx-WkZBdz-e9Jpeuu3g=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/ERD2ZD2BYNGQ7OU2QWFNJZK3JA.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/09/hedera-turns-off-services-after-network-irregularities/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Hedera Shuts Down Services After &#039;Network Irregularities&#039;</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">The network’s native token, Hedera (HBAR), fell 7% to roughly $.055 on news of the irregularities.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/09/silvergate-bank-had-to-be-perfect-but-now-pays-a-heavy-price-strategist/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/b6W8GcnWM88863c74xmtOASIYz0=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/UVDAS4EQ2NGGNEPPEH4ZCO4Z34.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/09/silvergate-bank-had-to-be-perfect-but-now-pays-a-heavy-price-strategist/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Silvergate Bank &#039;Had to Be Perfect&#039; but Now Pays a Heavy Price: Strategist</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">But because they weren’t, the industry now is likely to have a difficult time attracting traditional firms into the crypto banking industry, Jim Bianco, president&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/policy/2023/03/09/senior-us-house-republican-says-cbdcs-could-be-weaponized-as-political-tool/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/tvWNj83STtwvudGtqYm8INQhJzk=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/4TOMWFQRYNFL7ONAIARWYPTPRA.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/policy/2023/03/09/senior-us-house-republican-says-cbdcs-could-be-weaponized-as-political-tool/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Senior U.S. House Republican Says CBDCs Could Be ‘Weaponized’ as Political Tool</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">One of the top Republican lawmakers, Rep. Tom Emmer (R-Minn.), is campaigning to stop what he argues is the intent of President Joe Biden’s administration&hellip;</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/business/2023/03/09/voyager-continues-liquidating-crypto-assets-for-circles-usdc-stablecoin/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/aKYbq8YnlDkNXMOD6vNmQ2Sg9LU=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/QCI5ET2VMRBC7HIV47677X34EY.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/business/2023/03/09/voyager-continues-liquidating-crypto-assets-for-circles-usdc-stablecoin/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Voyager Continues Liquidating Crypto Assets for Circle’s USDC Stablecoin</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">Amid its ongoing bankruptcy case, Voyager has liquidated more than $80 million since March 8, according to on-chain data sourced from Arkham Intelligence.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/policy/2023/03/09/new-york-attorney-general-sues-crypto-exchange-kucoin-alleges-ether-is-a-security/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/K_MvVkrXVPzZ33aR8LzmHxK1E1I=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/KSZZAGPRRRGABDZDUFA7LDRH4M.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/policy/2023/03/09/new-york-attorney-general-sues-crypto-exchange-kucoin-alleges-ether-is-a-security/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">New York Attorney General Alleges Ether Is a Security in KuCoin Lawsuit</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">The New York Attorney General&#8217;s office sued Kucoin on Thursday, alleging it offered unregistered securities and commodities.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/markets/2023/03/09/bitcoin-dips-below-21k-to-reach-lowest-level-in-7-weeks-as-silvergate-bank-shutdown-shakes-investors/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/DakrArsZ92jIrJiw0FqvUEqfmj8=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/PTBKGKO5YJEENOGZD2FIK4BY3E.png);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/markets/2023/03/09/bitcoin-dips-below-21k-to-reach-lowest-level-in-7-weeks-as-silvergate-bank-shutdown-shakes-investors/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Bitcoin Dips Below $21K to Reach Lowest Level In 7  Weeks as Silvergate Bank Shutdown Shakes Investors</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">Bitcoin, ether and other major cryptocurrencies turned red as the crypto-focused lender’s crisis continued to unfold.</div>
+</div>
+</div></li>
+<li><div class="mcw-n-single">
+<a href="https://www.coindesk.com/web3/2023/03/09/starbucks-odyssey-releases-the-siren-collection-its-first-limited-edition-nft-drop/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-media"><div class="mcw-n-img" style="background-image: url(https://www.coindesk.com/resizer/lJGCJuPb6hXE_2W87p5KefDXlnU=/800x600/cloudfront-us-east-1.images.arcpublishing.com/coindesk/GEYXATMKGFCDLCGUY25RDVRMTU.jpg);"></div></a><div class="mcw-n-content">
+<a href="https://www.coindesk.com/web3/2023/03/09/starbucks-odyssey-releases-the-siren-collection-its-first-limited-edition-nft-drop/?utm_medium=referral&#038;utm_source=rss&#038;utm_campaign=headlines" target="_blank" rel="nofollow" class="mcw-n-title">Starbucks Odyssey Releases ‘The Siren Collection,’ Its First Limited-Edition NFT Drop</a><div class="mcw-n-stat">CoinDesk: Bitcoin, Ethereum, Crypto News and Price Data &#8211; 2 days ago</div>
+<div class="mcw-n-text">Members of Starbucks Odyssey, currently in beta, were able to purchase up to two “Stamps” from an edition of 2,000 featuring the brand’s iconic siren.</div>
+</div>
+</div></li>
+</ul></div>
+</div>
+	<section class="wp-block-template-part">
+<div class="has-global-padding is-layout-constrained wp-block-group" style="padding-top:var(--wp--preset--spacing--40);padding-right:var(--wp--preset--spacing--40);padding-bottom:var(--wp--preset--spacing--40);padding-left:var(--wp--preset--spacing--40)">
+	
+</div>
+
+
+</section>
+</main>
+
+
+<footer class="wp-block-template-part">
+<div class="has-global-padding is-layout-constrained wp-block-group">
+	
+	<div class="is-content-justification-space-between is-layout-flex wp-container-9 wp-block-group alignwide" style="padding-top:var(--wp--preset--spacing--40)">
+		<p class="wp-block-site-title"><a href="./../index.html" target="_self" rel="home">widget</a></p>
+		
+		<p class="has-text-align-right">
+		Proudly powered by <a href="https://wordpress.org/" rel="nofollow">WordPress</a>		</p>
+		
+	</div>
+	
+</div>
+
+
+</footer>
+</div>
+
+		<style id="skip-link-styles">.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}</style>
+		<script>( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		// Get the site wrapper.
+		// The skip-link will be injected in the beginning of it.
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );</script>
+	<script src="./../assets/js/socket.io.js" id="mcw-crypto-socket-io-js"></script>
+<!--[if lt IE 9]>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.0.8/es5-shim.min.js' id='mcw-crypto-es5-js'></script>
+<![endif]-->
+<script src="./../assets/js/selectize.min.js" id="mcw-crypto-select-js"></script>
+<script id="mcw-crypto-common-js-extra">var mcw = {"url":".\/\/wp-content\/plugins\/massive-cryptocurrency-widgets\/","ajax_url":".\/\/wp-admin\/admin-ajax.php","currency_format":{"USD":{"iso":"USD","symbol":"$","position":"{symbol}{space}{price}","thousands_sep":",","decimals_sep":".","decimals":"2"},"EUR":{"iso":"EUR","symbol":"€","position":"{price}{space}{symbol}","thousands_sep":".","decimals_sep":",","decimals":"2"},"INR":{"iso":"INR","symbol":"₹","position":"{symbol}{space}{price}","thousands_sep":",","decimals_sep":".","decimals":"2"}},"default_currency_format":{"iso":"USD","symbol":"","position":"{symbol}{price}","thousands_sep":",","decimals_sep":".","decimals":"2"},"text":{"previous":"Previous","next":"Next","lengthmenu":"Coins per page: _MENU_"},"api":"coingecko"};</script>
+<script src="./../assets/js/common.min.js" id="mcw-crypto-common-js"></script>
 </body>
 </html>

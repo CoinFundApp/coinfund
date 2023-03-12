@@ -1753,13 +1753,13 @@ const fileSuffix = elementorFrontendConfig.environmentMode.isScriptDebug ? '' : 
 AssetsLoader.assets = {
   script: {
     dialog: {
-      src: `${elementorFrontendConfig.urls.assets}lib/dialog/dialog${fileSuffix}.js?ver=4.9.0`
+      src: `${elementorFrontendConfig.urls.assets}lib/dialog/dialog${fileSuffix}.js`
     },
     'share-link': {
       src: `${elementorFrontendConfig.urls.assets}lib/share-link/share-link${fileSuffix}.js?ver=${elementorFrontendConfig.version}`
     },
     swiper: {
-      src: `${elementorFrontendConfig.urls.assets}lib/swiper/swiper${fileSuffix}.js?ver=5.3.6`
+      src: `${elementorFrontendConfig.urls.assets}lib/swiper/swiper${fileSuffix}.js`
     }
   },
   style: {}

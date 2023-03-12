@@ -1,9 +1,863 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-<style>body {background-color: #111111;}</style>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="max-image-preview:large">
+<title>widget</title>
+<link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+<link rel="alternate" type="application/rss+xml" title="widget &raquo; Feed" href="./../feed/index.html">
+<link rel="alternate" type="application/rss+xml" title="widget &raquo; Comments Feed" href="./../comments/feed/index.html">
+<style id="mcw-custom-inline-css">#mcw-8.cryptoboxes .mcw-list { color: white; background-color: #111111 } #mcw-8.cryptoboxes .mcw-list-2 { background-color: transparent; } #mcw-8.cryptoboxes .mcw-list-2 .mcw-list-item { background-color: #111111; } #mcw-8 .mcw-list-2 .mcw-list-header i::before, #mcw-8 .mcw-list-2 .mcw-list-header i::after { background-color: white }</style>
+<style id="wp-block-post-content-inline-css">.wp-block-post-content a:where(:not(.wp-element-button)){color: var(--wp--preset--color--secondary);}</style>
+<style id="wp-block-library-inline-css">:root{--wp-admin-theme-color:#007cba;--wp-admin-theme-color--rgb:0,124,186;--wp-admin-theme-color-darker-10:#006ba1;--wp-admin-theme-color-darker-10--rgb:0,107,161;--wp-admin-theme-color-darker-20:#005a87;--wp-admin-theme-color-darker-20--rgb:0,90,135;--wp-admin-border-width-focus:2px}@media (-webkit-min-device-pixel-ratio:2),(min-resolution:192dpi){:root{--wp-admin-border-width-focus:1.5px}}.wp-element-button{cursor:pointer}:root{--wp--preset--font-size--normal:16px;--wp--preset--font-size--huge:42px}:root .has-very-light-gray-background-color{background-color:#eee}:root .has-very-dark-gray-background-color{background-color:#313131}:root .has-very-light-gray-color{color:#eee}:root .has-very-dark-gray-color{color:#313131}:root .has-vivid-green-cyan-to-vivid-cyan-blue-gradient-background{background:linear-gradient(135deg,#00d084,#0693e3)}:root .has-purple-crush-gradient-background{background:linear-gradient(135deg,#34e2e4,#4721fb 50%,#ab1dfe)}:root .has-hazy-dawn-gradient-background{background:linear-gradient(135deg,#faaca8,#dad0ec)}:root .has-subdued-olive-gradient-background{background:linear-gradient(135deg,#fafae1,#67a671)}:root .has-atomic-cream-gradient-background{background:linear-gradient(135deg,#fdd79a,#004a59)}:root .has-nightshade-gradient-background{background:linear-gradient(135deg,#330968,#31cdcf)}:root .has-midnight-gradient-background{background:linear-gradient(135deg,#020381,#2874fc)}.has-regular-font-size{font-size:1em}.has-larger-font-size{font-size:2.625em}.has-normal-font-size{font-size:var(--wp--preset--font-size--normal)}.has-huge-font-size{font-size:var(--wp--preset--font-size--huge)}.has-text-align-center{text-align:center}.has-text-align-left{text-align:left}.has-text-align-right{text-align:right}#end-resizable-editor-section{display:none}.aligncenter{clear:both}.items-justified-left{justify-content:flex-start}.items-justified-center{justify-content:center}.items-justified-right{justify-content:flex-end}.items-justified-space-between{justify-content:space-between}.screen-reader-text{border:0;clip:rect(1px,1px,1px,1px);clip-path:inset(50%);height:1px;margin:-1px;overflow:hidden;padding:0;position:absolute;width:1px;word-wrap:normal!important}.screen-reader-text:focus{background-color:#ddd;clip:auto!important;clip-path:none;color:#444;display:block;font-size:1em;height:auto;left:5px;line-height:normal;padding:15px 23px 14px;text-decoration:none;top:5px;width:auto;z-index:100000}html :where(.has-border-color){border-style:solid}html :where([style*=border-top-color]){border-top-style:solid}html :where([style*=border-right-color]){border-right-style:solid}html :where([style*=border-bottom-color]){border-bottom-style:solid}html :where([style*=border-left-color]){border-left-style:solid}html :where([style*=border-width]){border-style:solid}html :where([style*=border-top-width]){border-top-style:solid}html :where([style*=border-right-width]){border-right-style:solid}html :where([style*=border-bottom-width]){border-bottom-style:solid}html :where([style*=border-left-width]){border-left-style:solid}html :where(img[class*=wp-image-]){height:auto;max-width:100%}figure{margin:0 0 1em}</style>
+<style id="global-styles-inline-css">body{--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--color--base: #ffffff;--wp--preset--color--contrast: #000000;--wp--preset--color--primary: #9DFF20;--wp--preset--color--secondary: #345C00;--wp--preset--color--tertiary: #F6F6F6;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--duotone--dark-grayscale: url('#wp-duotone-dark-grayscale');--wp--preset--duotone--grayscale: url('#wp-duotone-grayscale');--wp--preset--duotone--purple-yellow: url('#wp-duotone-purple-yellow');--wp--preset--duotone--blue-red: url('#wp-duotone-blue-red');--wp--preset--duotone--midnight: url('#wp-duotone-midnight');--wp--preset--duotone--magenta-yellow: url('#wp-duotone-magenta-yellow');--wp--preset--duotone--purple-green: url('#wp-duotone-purple-green');--wp--preset--duotone--blue-orange: url('#wp-duotone-blue-orange');--wp--preset--font-size--small: clamp(0.875rem, 0.875rem + ((1vw - 0.48rem) * 0.24), 1rem);--wp--preset--font-size--medium: clamp(1rem, 1rem + ((1vw - 0.48rem) * 0.24), 1.125rem);--wp--preset--font-size--large: clamp(1.75rem, 1.75rem + ((1vw - 0.48rem) * 0.24), 1.875rem);--wp--preset--font-size--x-large: 2.25rem;--wp--preset--font-size--xx-large: clamp(4rem, 4rem + ((1vw - 0.48rem) * 11.538), 10rem);--wp--preset--font-family--dm-sans: "DM Sans", sans-serif;--wp--preset--font-family--ibm-plex-mono: 'IBM Plex Mono', monospace;--wp--preset--font-family--inter: "Inter", sans-serif;--wp--preset--font-family--system-font: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen-Sans,Ubuntu,Cantarell,"Helvetica Neue",sans-serif;--wp--preset--font-family--source-serif-pro: "Source Serif Pro", serif;--wp--preset--spacing--30: clamp(1.5rem, 5vw, 2rem);--wp--preset--spacing--40: clamp(1.8rem, 1.8rem + ((1vw - 0.48rem) * 2.885), 3rem);--wp--preset--spacing--50: clamp(2.5rem, 8vw, 4.5rem);--wp--preset--spacing--60: clamp(3.75rem, 10vw, 7rem);--wp--preset--spacing--70: clamp(5rem, 5.25rem + ((1vw - 0.48rem) * 9.096), 8rem);--wp--preset--spacing--80: clamp(7rem, 14vw, 11rem);}body { margin: 0;--wp--style--global--content-size: 650px;--wp--style--global--wide-size: 1200px; }.wp-site-blocks { padding-top: var(--wp--style--root--padding-top); padding-bottom: var(--wp--style--root--padding-bottom); }.has-global-padding { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding :where(.has-global-padding) { padding-right: 0; padding-left: 0; }.has-global-padding > .alignfull { margin-right: calc(var(--wp--style--root--padding-right) * -1); margin-left: calc(var(--wp--style--root--padding-left) * -1); }.has-global-padding :where(.has-global-padding) > .alignfull { margin-right: 0; margin-left: 0; }.has-global-padding > .alignfull:where(:not(.has-global-padding)) > :where([class*="wp-block-"]:not(.alignfull):not([class*="__"]),p,h1,h2,h3,h4,h5,h6,ul,ol) { padding-right: var(--wp--style--root--padding-right); padding-left: var(--wp--style--root--padding-left); }.has-global-padding :where(.has-global-padding) > .alignfull:where(:not(.has-global-padding)) > :where([class*="wp-block-"]:not(.alignfull):not([class*="__"]),p,h1,h2,h3,h4,h5,h6,ul,ol) { padding-right: 0; padding-left: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }.wp-site-blocks > * { margin-block-start: 0; margin-block-end: 0; }.wp-site-blocks > * + * { margin-block-start: 1.5rem; }body { --wp--style--block-gap: 1.5rem; }body .is-layout-flow > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-flow > * + *{margin-block-start: 1.5rem;margin-block-end: 0;}body .is-layout-constrained > *{margin-block-start: 0;margin-block-end: 0;}body .is-layout-constrained > * + *{margin-block-start: 1.5rem;margin-block-end: 0;}body .is-layout-flex{gap: 1.5rem;}body .is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}body .is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}body .is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}body .is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}body .is-layout-flex{flex-wrap: wrap;align-items: center;}body .is-layout-flex > *{margin: 0;}body{background-color: #111111;color: var(--wp--preset--color--contrast);font-family: var(--wp--preset--font-family--system-font);font-size: var(--wp--preset--font-size--medium);line-height: 1.6;--wp--style--root--padding-top: var(--wp--preset--spacing--40);--wp--style--root--padding-right: var(--wp--preset--spacing--30);--wp--style--root--padding-bottom: var(--wp--preset--spacing--40);--wp--style--root--padding-left: var(--wp--preset--spacing--30);}a:where(:not(.wp-element-button)){color: var(--wp--preset--color--contrast);text-decoration: underline;}a:where(:not(.wp-element-button)):hover{text-decoration: none;}a:where(:not(.wp-element-button)):focus{text-decoration: underline dashed;}a:where(:not(.wp-element-button)):active{color: var(--wp--preset--color--secondary);text-decoration: none;}h1, h2, h3, h4, h5, h6{font-weight: 400;line-height: 1.4;}h1{font-size: clamp(2.719rem, 2.719rem + ((1vw - 0.48rem) * 1.742), 3.625rem);line-height: 1.2;}h2{font-size: clamp(2.625rem, calc(2.625rem + ((1vw - 0.48rem) * 8.4135)), 3.25rem);line-height: 1.2;}h3{font-size: var(--wp--preset--font-size--x-large);}h4{font-size: var(--wp--preset--font-size--large);}h5{font-size: var(--wp--preset--font-size--medium);font-weight: 700;text-transform: uppercase;}h6{font-size: var(--wp--preset--font-size--medium);text-transform: uppercase;}.wp-element-button, .wp-block-button__link{background-color: var(--wp--preset--color--primary);border-radius: 0;border-width: 0;color: var(--wp--preset--color--contrast);font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.wp-element-button:visited, .wp-block-button__link:visited{color: var(--wp--preset--color--contrast);}.wp-element-button:hover, .wp-block-button__link:hover{background-color: var(--wp--preset--color--contrast);color: var(--wp--preset--color--base);}.wp-element-button:focus, .wp-block-button__link:focus{background-color: var(--wp--preset--color--contrast);color: var(--wp--preset--color--base);}.wp-element-button:active, .wp-block-button__link:active{background-color: var(--wp--preset--color--secondary);color: var(--wp--preset--color--base);}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-base-color{color: var(--wp--preset--color--base) !important;}.has-contrast-color{color: var(--wp--preset--color--contrast) !important;}.has-primary-color{color: var(--wp--preset--color--primary) !important;}.has-secondary-color{color: var(--wp--preset--color--secondary) !important;}.has-tertiary-color{color: var(--wp--preset--color--tertiary) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-background-color{background-color: var(--wp--preset--color--base) !important;}.has-contrast-background-color{background-color: var(--wp--preset--color--contrast) !important;}.has-primary-background-color{background-color: var(--wp--preset--color--primary) !important;}.has-secondary-background-color{background-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-background-color{background-color: var(--wp--preset--color--tertiary) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-base-border-color{border-color: var(--wp--preset--color--base) !important;}.has-contrast-border-color{border-color: var(--wp--preset--color--contrast) !important;}.has-primary-border-color{border-color: var(--wp--preset--color--primary) !important;}.has-secondary-border-color{border-color: var(--wp--preset--color--secondary) !important;}.has-tertiary-border-color{border-color: var(--wp--preset--color--tertiary) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}.has-xx-large-font-size{font-size: var(--wp--preset--font-size--xx-large) !important;}.has-dm-sans-font-family{font-family: var(--wp--preset--font-family--dm-sans) !important;}.has-ibm-plex-mono-font-family{font-family: var(--wp--preset--font-family--ibm-plex-mono) !important;}.has-inter-font-family{font-family: var(--wp--preset--font-family--inter) !important;}.has-system-font-font-family{font-family: var(--wp--preset--font-family--system-font) !important;}.has-source-serif-pro-font-family{font-family: var(--wp--preset--font-family--source-serif-pro) !important;}</style>
+<style id="wp-webfonts-inline-css">@font-face{font-family:"DM Sans";font-style:normal;font-weight:400;font-display:fallback;src:local("DM Sans"), url('./../wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Regular.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"DM Sans";font-style:italic;font-weight:400;font-display:fallback;src:local("DM Sans"), url('./../wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Regular-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"DM Sans";font-style:normal;font-weight:700;font-display:fallback;src:local("DM Sans"), url('./../wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Bold.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"DM Sans";font-style:italic;font-weight:700;font-display:fallback;src:local("DM Sans"), url('./../wp-content/themes/twentytwentythree/assets/fonts/dm-sans/DMSans-Bold-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:300;font-display:block;src:local("IBM Plex Mono"), url('./../wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Light.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:400;font-display:block;src:local("IBM Plex Mono"), url('./../wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Regular.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:italic;font-weight:400;font-display:block;src:local("IBM Plex Mono"), url('./../wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Italic.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"IBM Plex Mono";font-style:normal;font-weight:700;font-display:block;src:local("IBM Plex Mono"), url('./../wp-content/themes/twentytwentythree/assets/fonts/ibm-plex-mono/IBMPlexMono-Bold.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:Inter;font-style:normal;font-weight:200 900;font-display:fallback;src:local(Inter), url('./../wp-content/themes/twentytwentythree/assets/fonts/inter/Inter-VariableFont_slnt,wght.ttf') format('truetype');font-stretch:normal;}@font-face{font-family:"Source Serif Pro";font-style:normal;font-weight:200 900;font-display:fallback;src:local("Source Serif Pro"), url('./../wp-content/themes/twentytwentythree/assets/fonts/source-serif-pro/SourceSerif4Variable-Roman.ttf.woff2') format('woff2');font-stretch:normal;}@font-face{font-family:"Source Serif Pro";font-style:italic;font-weight:200 900;font-display:fallback;src:local("Source Serif Pro"), url('./../wp-content/themes/twentytwentythree/assets/fonts/source-serif-pro/SourceSerif4Variable-Italic.ttf.woff2') format('woff2');font-stretch:normal;}</style>
+<link rel="stylesheet" id="mcw-crypto-css" href="./../assets/css/style.css" media="all">
+<link rel="stylesheet" id="mcw-crypto-select-css" href="./../assets/css/selectize.custom.css" media="all">
+<link rel="stylesheet" id="mcw-crypto-datatable-css" href="./../assets/css/jquery.dataTables.min.css" media="all">
+<script src="./../assets/js/jquery.min.js" id="jquery-core-js"></script>
+<script src="./../assets/js/jquery-migrate.min.js" id="jquery-migrate-js"></script>
+<link rel="https://api.w.org/" href="./../wp-json/index.html">
+<link rel="alternate" type="application/json" href="./../wp-json/wp/v2/pages/11/index.html">
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="./../xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="./../wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 6.1.1">
+<link rel="canonical" href="./index.html">
+<link rel="shortlink" href="./../index.html?p=11">
+<link rel="alternate" type="application/json+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2F11-2%2F">
+<link rel="alternate" type="text/xml+oembed" href="./../wp-json/oembed/1.0/embed/index.html?url=http%3A%2F%2F%2F11-2%2F#038;format=xml">
 </head>
-<body>
-<div style="margin-left:10px;margin-right:10px;zoom:250%;" class="cryptohopper-web-widget" data-id="4" data-chart_color="#0057fc" data-text_color="#ffffff" data-background_color="#111111" data-coins="null" data-numcoins="50" data-theme="custom" data-realtime="on"></div>
+
+<body class="page-template page-template-blank page page-id-11 wp-embed-responsive">
+<div class="wp-site-blocks">
+<div class="has-global-padding is-layout-constrained entry-content wp-block-post-content">
+<div class="cryptoboxes" id="mcw-8" data-realtime="on"><div class="mcw-list mcw-list-shadow mcw-list-2">
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="bitcoin" src="https://assets.coingecko.com/coins/images/1/thumb/bitcoin.png" height="25"></span><span>Bitcoin</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="20436.00000000000000" data-live-price="bitcoin" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>20,441.48</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="20436.00000000000000" data-live-price="bitcoin" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>20,441.48</span>
+</div>
+<span class="mcw-list-change up">0.3%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="20361,20430,20331,20175,20072,20068,20082,20013,20095,20099,20176,20108,20070,20214,20311,20227,20429,20349,20378,20476,20470,20468,20361,20436"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="ethereum" src="https://assets.coingecko.com/coins/images/279/thumb/ethereum.png" height="25"></span><span>Ethereum</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="1472.22000000000003" data-live-price="ethereum" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>1,472.61</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="1472.22000000000003" data-live-price="ethereum" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>1,472.61</span>
+</div>
+<span class="mcw-list-change up">0.82%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="1461.06,1466.5,1458.77,1453.44,1433.14,1433.13,1431.84,1420.52,1432.22,1431.35,1435.06,1431.19,1430.6,1448.23,1457.53,1451.32,1468.98,1464.81,1463.36,1468.28,1466.91,1466.57,1463.22,1472.22"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="tether" src="https://assets.coingecko.com/coins/images/325/thumb/Tether.png" height="25"></span><span>Tether</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="1.00200000000000" data-live-price="tether" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>1.00</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="1.00200000000000" data-live-price="tether" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>1.00</span>
+</div>
+<span class="mcw-list-change up">0.19%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="1.001,1.001,1.002,1.001,1.001,1.002,0.999585,1,1.001,1.002,1.001,1.001,1.002,1.001,1.002,1.001,1.004,1.001,1.002,1.002,1.002,1.002,0.999867,1.002"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="bnb" src="https://assets.coingecko.com/coins/images/825/thumb/bnb-icon2_2x.png" height="25"></span><span>BNB</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="277.51999999999998" data-live-price="bnb" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>277.59</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="277.51999999999998" data-live-price="bnb" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>277.59</span>
+</div>
+<span class="mcw-list-change down">0.53%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="279.61,279.59,278.46,276.47,274.28,275.18,275.96,274.02,275.87,273.38,273.54,273.3,271.33,272.61,273.63,272.48,274.45,274.05,274.38,275.53,275.61,276.68,276.36,277.52"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="usd-coin" src="https://assets.coingecko.com/coins/images/6319/thumb/USD_Coin_icon.png" height="25"></span><span>USD Coin</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.97089500000000" data-live-price="usd-coin" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.971155</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.97089500000000" data-live-price="usd-coin" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.971155</span>
+</div>
+<span class="mcw-list-change down">0.49%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.945571,0.937174,0.894673,0.887934,0.910731,0.907957,0.904275,0.901226,0.915841,0.908087,0.908619,0.915875,0.916813,0.932055,0.940543,0.942955,0.972887,0.953519,0.949877,0.961049,0.962351,0.975263,0.965545,0.970895"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="xrp" src="https://assets.coingecko.com/coins/images/44/thumb/xrp-symbol-white-128.png" height="25"></span><span>XRP</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.36539500000000" data-live-price="ripple" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.365493</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.36539500000000" data-live-price="ripple" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.365493</span>
+</div>
+<span class="mcw-list-change down">1.38%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.369569,0.370871,0.369657,0.369042,0.363775,0.365347,0.363997,0.362315,0.36393,0.361907,0.362904,0.362684,0.363415,0.36375,0.364829,0.363818,0.365113,0.36379,0.363712,0.365206,0.365788,0.365358,0.364032,0.365395"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="cardano" src="https://assets.coingecko.com/coins/images/975/thumb/cardano.png" height="25"></span><span>Cardano</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.30640700000000" data-live-price="cardano" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.306489</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.30640700000000" data-live-price="cardano" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.306489</span>
+</div>
+<span class="mcw-list-change down">3.75%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.316291,0.318576,0.317119,0.31399,0.31075,0.311385,0.309483,0.307531,0.307063,0.306412,0.306882,0.305225,0.304537,0.304865,0.306765,0.304695,0.307169,0.304766,0.30408,0.305195,0.303501,0.304914,0.304622,0.306407"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="matic-network" src="https://assets.coingecko.com/coins/images/4713/thumb/matic-token-icon.png" height="25"></span><span>Polygon</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="1.06100000000000" data-live-price="polygon" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>1.06</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="1.06100000000000" data-live-price="polygon" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>1.06</span>
+</div>
+<span class="mcw-list-change down">0.11%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="1.052,1.057,1.048,1.031,1.013,1.018,1.014,1.008,1.019,1.018,1.018,1.007,1.01,1.026,1.029,1.025,1.046,1.041,1.048,1.058,1.052,1.053,1.051,1.061"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="dogecoin" src="https://assets.coingecko.com/coins/images/5/thumb/dogecoin.png" height="25"></span><span>Dogecoin</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.06643200000000" data-live-price="dogecoin" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.06645</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.06643200000000" data-live-price="dogecoin" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.06645</span>
+</div>
+<span class="mcw-list-change down">0.71%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.066486,0.066669,0.066367,0.065171,0.064944,0.065122,0.065003,0.064695,0.064863,0.064891,0.06504,0.064384,0.064693,0.065214,0.065542,0.065523,0.066228,0.065802,0.065884,0.066373,0.065975,0.066081,0.066137,0.066432"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="staked-ether" src="https://assets.coingecko.com/coins/images/13442/thumb/steth_logo.png" height="25"></span><span>Lido Staked Ether</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="1463.00000000000000" data-live-price="lido-staked-ether" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>1,463.39</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="1463.00000000000000" data-live-price="lido-staked-ether" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>1,463.39</span>
+</div>
+<span class="mcw-list-change up">0.57%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="1456.24,1461.2,1452.68,1450.56,1421.4,1422.58,1423.43,1410.63,1419.46,1424.17,1424.51,1420.84,1418.98,1436.15,1445.64,1438.73,1455.23,1453.76,1451.25,1458.21,1456.27,1459.26,1452.22,1463"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="binance-usd" src="https://assets.coingecko.com/coins/images/9576/thumb/BUSD.png" height="25"></span><span>Binance USD</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.99627700000000" data-live-price="binance-usd" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.996544</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.99627700000000" data-live-price="binance-usd" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.996544</span>
+</div>
+<span class="mcw-list-change up">0.3%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.998423,0.997047,0.998236,0.995725,0.992055,0.995745,0.994258,0.992384,0.995887,0.993308,0.994784,0.992213,0.990813,0.992737,0.993669,0.993248,0.998036,0.996012,0.994011,0.996096,0.995979,0.994832,0.99506,0.996277"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="solana" src="https://assets.coingecko.com/coins/images/4128/thumb/solana.png" height="25"></span><span>Solana</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="18.11000000000000" data-live-price="solana" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>18.11</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="18.11000000000000" data-live-price="solana" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>18.11</span>
+</div>
+<span class="mcw-list-change down">1.66%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="18.12,18.19,18.02,17.54,17.41,17.49,17.53,17.34,17.45,17.35,17.45,17.21,17.28,17.61,17.89,17.89,18.12,18.05,18,18.1,17.92,17.97,17.93,18.11"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="polkadot" src="https://assets.coingecko.com/coins/images/12171/thumb/polkadot.png" height="25"></span><span>Polkadot</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="5.49000000000000" data-live-price="polkadot" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>5.49</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="5.49000000000000" data-live-price="polkadot" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>5.49</span>
+</div>
+<span class="mcw-list-change down">2.23%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="5.56,5.58,5.54,5.44,5.36,5.36,5.35,5.3,5.32,5.31,5.32,5.26,5.29,5.34,5.37,5.37,5.42,5.42,5.42,5.46,5.43,5.43,5.44,5.49"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="shiba-inu" src="https://assets.coingecko.com/coins/images/11939/thumb/shiba.png" height="25"></span><span>Shiba Inu</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.00001028000000" data-live-price="shiba-inu" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.00001</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.00001028000000" data-live-price="shiba-inu" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.00001</span>
+</div>
+<span class="mcw-list-change down">0.5%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="1.028E-5,1.031E-5,1.028E-5,1.017E-5,1.01E-5,1.009E-5,1.01E-5,1.004E-5,1.006E-5,1.002E-5,1.007E-5,9.95E-6,1.002E-5,1.012E-5,1.019E-5,1.016E-5,1.027E-5,1.022E-5,1.022E-5,1.028E-5,1.024E-5,1.026E-5,1.022E-5,1.028E-5"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="dai" src="https://assets.coingecko.com/coins/images/9956/thumb/4943.png" height="25"></span><span>Dai</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.97330000000000" data-live-price="dai" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.973561</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.97330000000000" data-live-price="dai" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.973561</span>
+</div>
+<span class="mcw-list-change down">1.1%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.948531,0.943763,0.922054,0.885726,0.91421,0.924623,0.925466,0.918468,0.924619,0.926634,0.923223,0.929791,0.932152,0.95371,0.962423,0.965659,0.979372,0.962606,0.958378,0.962026,0.964319,0.973237,0.970348,0.9733"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="tron" src="https://assets.coingecko.com/coins/images/1094/thumb/tron-logo.png" height="25"></span><span>TRON</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.05906500000000" data-live-price="tron" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.059081</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.05906500000000" data-live-price="tron" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.059081</span>
+</div>
+<span class="mcw-list-change up">2.54%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.056832,0.057078,0.056888,0.056042,0.055688,0.056001,0.055975,0.055789,0.056164,0.055868,0.056013,0.055786,0.056148,0.056821,0.057344,0.057806,0.058843,0.058501,0.0586,0.058903,0.058774,0.058888,0.058868,0.059065"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="litecoin" src="https://assets.coingecko.com/coins/images/2/thumb/litecoin.png" height="25"></span><span>Litecoin</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="69.48999999999999" data-live-price="litecoin" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>69.51</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="69.48999999999999" data-live-price="litecoin" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>69.51</span>
+</div>
+<span class="mcw-list-change down">4.2%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="71.73,71.87,70.99,67.74,66.66,67.38,67.51,66.75,67.49,67.15,67.21,66.84,67.8,68.89,69.21,68.52,69.42,68.29,68.5,69.05,68.81,69.13,68.99,69.49"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="avalanche-2" src="https://assets.coingecko.com/coins/images/12559/thumb/Avalanche_Circle_RedWhite_Trans.png" height="25"></span><span>Avalanche</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="14.47000000000000" data-live-price="avalanche" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>14.47</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="14.47000000000000" data-live-price="avalanche" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>14.47</span>
+</div>
+<span class="mcw-list-change down">2.34%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="14.58,14.7,14.62,14.37,14.32,14.37,14.31,14.18,14.25,14.14,14.17,14,14.07,14.27,14.33,14.3,14.37,14.31,14.37,14.48,14.41,14.42,14.39,14.47"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="uniswap" src="https://assets.coingecko.com/coins/images/12504/thumb/uniswap-uni.png" height="25"></span><span>Uniswap</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="5.47000000000000" data-live-price="uniswap" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>5.47</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="5.47000000000000" data-live-price="uniswap" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>5.47</span>
+</div>
+<span class="mcw-list-change down">3.49%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="5.62,5.66,5.66,5.55,5.38,5.39,5.34,5.31,5.35,5.37,5.38,5.26,5.31,5.38,5.39,5.38,5.44,5.42,5.42,5.44,5.4,5.42,5.41,5.47"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="leo-token" src="https://assets.coingecko.com/coins/images/8418/thumb/leo-token.png" height="25"></span><span>LEO Token</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="3.58000000000000" data-live-price="leo-token" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>3.58</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="3.58000000000000" data-live-price="leo-token" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>3.58</span>
+</div>
+<span class="mcw-list-change up">3.61%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="3.45,3.43,3.43,3.44,3.4,3.41,3.42,3.42,3.43,3.42,3.42,3.42,3.42,3.43,3.48,3.49,3.51,3.43,3.51,3.5,3.51,3.53,3.54,3.58"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="the-open-network" src="https://assets.coingecko.com/coins/images/17980/thumb/ton_symbol.png" height="25"></span><span>Toncoin</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="2.24000000000000" data-live-price="toncoin" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>2.24</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="2.24000000000000" data-live-price="toncoin" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>2.24</span>
+</div>
+<span class="mcw-list-change down">1.79%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="2.24,2.25,2.28,2.26,2.26,2.26,2.25,2.21,2.23,2.23,2.22,2.23,2.23,2.22,2.22,2.22,2.24,2.23,2.24,2.24,2.22,2.22,2.22,2.24"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="cosmos" src="https://assets.coingecko.com/coins/images/1481/thumb/cosmos_hub.png" height="25"></span><span>Cosmos Hub</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="11.00000000000000" data-live-price="cosmos-hub" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>11.00</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="11.00000000000000" data-live-price="cosmos-hub" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>11.00</span>
+</div>
+<span class="mcw-list-change down">1.63%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="11.11,11.19,11.14,11.02,10.78,10.75,10.71,10.65,10.79,10.76,10.77,10.61,10.67,10.76,10.8,10.79,10.91,10.87,10.95,11.03,10.96,10.96,10.93,11"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="wrapped-bitcoin" src="https://assets.coingecko.com/coins/images/7598/thumb/wrapped_bitcoin_wbtc.png" height="25"></span><span>Wrapped Bitcoin</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="20535.00000000000000" data-live-price="wrapped-bitcoin" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>20,540.50</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="20535.00000000000000" data-live-price="wrapped-bitcoin" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>20,540.50</span>
+</div>
+<span class="mcw-list-change down">0.07%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="20649,20753,20578,20636,20200,20133,20110,20067,20173,20091,20210,20130,20072,20234,20335,20257,20447,20370,20370,20518,20437,20528,20441,20535"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="chainlink" src="https://assets.coingecko.com/coins/images/877/thumb/chainlink-new-logo.png" height="25"></span><span>Chainlink</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="6.17000000000000" data-live-price="chainlink" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>6.17</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="6.17000000000000" data-live-price="chainlink" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>6.17</span>
+</div>
+<span class="mcw-list-change down">1.41%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="6.2,6.21,6.19,6.09,6.05,6.03,6.01,5.98,6.02,6.01,6.01,5.96,5.99,6.05,6.09,6.08,6.14,6.12,6.13,6.16,6.14,6.14,6.15,6.17"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="monero" src="https://assets.coingecko.com/coins/images/69/thumb/monero_logo.png" height="25"></span><span>Monero</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="140.19999999999999" data-live-price="monero" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>140.24</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="140.19999999999999" data-live-price="monero" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>140.24</span>
+</div>
+<span class="mcw-list-change up">2.6%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="137.03,137.41,137.07,135.29,134.28,135.42,136.97,135.86,137.1,137.59,136.98,137.82,139.17,139.63,140.38,140.77,142.12,140.55,139.67,140.24,140.93,140.86,139.47,140.2"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="ethereum-classic" src="https://assets.coingecko.com/coins/images/453/thumb/ethereum-classic-logo.png" height="25"></span><span>Ethereum Classic</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="17.16000000000000" data-live-price="ethereum-classic" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>17.16</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="17.16000000000000" data-live-price="ethereum-classic" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>17.16</span>
+</div>
+<span class="mcw-list-change down">2%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="17.43,17.52,17.37,17,16.79,16.84,16.81,16.67,16.79,16.76,16.84,16.7,16.73,16.91,17.02,16.96,17.2,17.02,17.05,17.16,17.1,17.12,17.05,17.16"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="okb" src="https://assets.coingecko.com/coins/images/4463/thumb/WeChat_Image_20220118095654.png" height="25"></span><span>OKB</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="39.38000000000000" data-live-price="okb" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>39.39</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="39.38000000000000" data-live-price="okb" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>39.39</span>
+</div>
+<span class="mcw-list-change down">4.97%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="41.51,41.22,40.13,39.01,38.94,38.58,38.7,38.57,38.7,38.69,38.83,38.36,39.15,39.67,39.5,39.48,39.84,39.57,39.4,40.29,40.19,39.9,39.24,39.38"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="bitcoin-cash" src="https://assets.coingecko.com/coins/images/780/thumb/bitcoin-cash-circle.png" height="25"></span><span>Bitcoin Cash</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="113.13000000000000" data-live-price="bitcoin-cash" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>113.16</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="113.13000000000000" data-live-price="bitcoin-cash" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>113.16</span>
+</div>
+<span class="mcw-list-change up">0.15%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="112.68,113.03,112.6,111.18,109.44,109.85,109.34,108.74,109.5,109.06,109.87,109.09,109.36,110.62,111.3,111.64,113.48,112.28,112.53,113.18,113.07,113.25,112.75,113.13"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="stellar" src="https://assets.coingecko.com/coins/images/100/thumb/Stellar_symbol_black_RGB.png" height="25"></span><span>Stellar</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.08010700000000" data-live-price="stellar" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.080128</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.08010700000000" data-live-price="stellar" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.080128</span>
+</div>
+<span class="mcw-list-change up">2.25%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.078044,0.078283,0.077891,0.077338,0.076224,0.07673,0.076678,0.07605,0.076422,0.076229,0.076535,0.076165,0.076319,0.077232,0.077861,0.078458,0.078753,0.078396,0.079021,0.079199,0.07929,0.079737,0.079849,0.080107"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="filecoin" src="https://assets.coingecko.com/coins/images/12817/thumb/filecoin.png" height="25"></span><span>Filecoin</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="4.97000000000000" data-live-price="filecoin" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>4.97</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="4.97000000000000" data-live-price="filecoin" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>4.97</span>
+</div>
+<span class="mcw-list-change down">7.3%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="5.28,5.3,5.24,4.92,4.82,4.79,4.78,4.7,4.8,4.79,4.82,4.72,4.74,4.81,4.84,4.86,4.96,4.92,4.92,4.95,4.91,4.91,4.93,4.97"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="lido-dao" src="https://assets.coingecko.com/coins/images/13573/thumb/Lido_DAO.png" height="25"></span><span>Lido DAO</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="2.13000000000000" data-live-price="lido-dao" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>2.13</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="2.13000000000000" data-live-price="lido-dao" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>2.13</span>
+</div>
+<span class="mcw-list-change down">8.21%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="2.28,2.3,2.29,2.23,2.18,2.17,2.15,2.12,2.12,2.11,2.07,2.01,2,2.08,2.07,2.06,2.11,2.11,2.11,2.13,2.09,2.11,2.11,2.13"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="aptos" src="https://assets.coingecko.com/coins/images/26455/thumb/aptos_round.png" height="25"></span><span>Aptos</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="10.43000000000000" data-live-price="aptos" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>10.43</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="10.43000000000000" data-live-price="aptos" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>10.43</span>
+</div>
+<span class="mcw-list-change down">2.88%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="10.55,10.66,10.58,10.29,10.16,10.15,10.12,10.02,10.13,10.1,10.12,9.98,10.04,10.28,10.28,10.23,10.35,10.31,10.34,10.41,10.31,10.41,10.29,10.43"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="quant-network" src="https://assets.coingecko.com/coins/images/3370/thumb/5ZOu7brX_400x400.jpg" height="25"></span><span>Quant</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="118.76000000000001" data-live-price="quant" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>118.79</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="118.76000000000001" data-live-price="quant" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>118.79</span>
+</div>
+<span class="mcw-list-change down">1.61%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="121.26,122.06,123.39,120.22,119.09,118.56,118.34,117.2,115.88,115.93,116.29,113.8,113.28,116.57,116.56,116.26,117.12,115.84,116.86,117.61,117.54,118.68,118.09,118.76"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="true-usd" src="https://assets.coingecko.com/coins/images/3449/thumb/tusd.png" height="25"></span><span>TrueUSD</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.99625000000000" data-live-price="trueusd" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.996517</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.99625000000000" data-live-price="trueusd" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.996517</span>
+</div>
+<span class="mcw-list-change up">0.26%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.996234,0.99726,0.990601,0.996337,0.984613,0.990387,0.993381,0.987898,0.993607,0.989099,0.986609,0.988768,0.989019,0.988394,0.994571,0.991839,0.994716,0.992203,0.993004,0.994138,0.995295,0.997409,0.993298,0.99625"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="hedera-hashgraph" src="https://assets.coingecko.com/coins/images/3688/thumb/hbar.png" height="25"></span><span>Hedera</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.05854700000000" data-live-price="hedera" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.058563</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.05854700000000" data-live-price="hedera" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.058563</span>
+</div>
+<span class="mcw-list-change down">3.33%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.060183,0.060518,0.061299,0.059829,0.059628,0.059928,0.059113,0.058976,0.058722,0.058394,0.058076,0.05714,0.056452,0.056852,0.056952,0.056978,0.057705,0.057241,0.0578,0.058284,0.057799,0.057788,0.058197,0.058547"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="crypto-com-chain" src="https://assets.coingecko.com/coins/images/7310/thumb/cro_token_logo.png" height="25"></span><span>Cronos</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.06447200000000" data-live-price="cronos" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.064489</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.06447200000000" data-live-price="cronos" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.064489</span>
+</div>
+<span class="mcw-list-change up">0.44%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.064097,0.064397,0.06421,0.063532,0.063134,0.062959,0.063038,0.062641,0.063152,0.063692,0.064048,0.063309,0.063276,0.063844,0.064137,0.063966,0.0645,0.06421,0.064246,0.064423,0.064321,0.064498,0.064256,0.064472"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="near" src="https://assets.coingecko.com/coins/images/10365/thumb/near.png" height="25"></span><span>NEAR Protocol</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="1.79000000000000" data-live-price="near-protocol" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>1.79</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="1.79000000000000" data-live-price="near-protocol" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>1.79</span>
+</div>
+<span class="mcw-list-change down">2.81%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="1.81,1.82,1.82,1.79,1.75,1.76,1.74,1.73,1.74,1.72,1.72,1.7,1.71,1.73,1.74,1.73,1.76,1.75,1.77,1.79,1.78,1.77,1.78,1.79"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="vechain" src="https://assets.coingecko.com/coins/images/1167/thumb/VeChain-Logo-768x725.png" height="25"></span><span>VeChain</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.02039264000000" data-live-price="vechain" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.020398</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.02039264000000" data-live-price="vechain" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.020398</span>
+</div>
+<span class="mcw-list-change down">1.56%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.02057621,0.02065341,0.0205388,0.02008381,0.01975098,0.01983607,0.01979669,0.01961937,0.01978764,0.01977483,0.01981975,0.01961101,0.01972746,0.02007373,0.02020783,0.02015049,0.02036594,0.02025846,0.02025909,0.02034889,0.02021864,0.02029789,0.02027946,0.02039264"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="apecoin" src="https://assets.coingecko.com/coins/images/24383/thumb/apecoin.jpg" height="25"></span><span>ApeCoin</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="3.83000000000000" data-live-price="apecoin" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>3.83</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="3.83000000000000" data-live-price="apecoin" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>3.83</span>
+</div>
+<span class="mcw-list-change down">5.87%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="4,4.02,3.98,3.87,3.78,3.78,3.75,3.68,3.69,3.69,3.7,3.62,3.64,3.68,3.71,3.73,3.79,3.75,3.74,3.77,3.76,3.8,3.78,3.83"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="internet-computer" src="https://assets.coingecko.com/coins/images/14495/thumb/Internet_Computer_logo.png" height="25"></span><span>Internet Computer</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="4.70000000000000" data-live-price="internet-computer" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>4.70</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="4.70000000000000" data-live-price="internet-computer" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>4.70</span>
+</div>
+<span class="mcw-list-change down">4.67%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="4.88,4.92,4.86,4.76,4.66,4.68,4.63,4.56,4.59,4.64,4.65,4.57,4.59,4.63,4.63,4.64,4.71,4.7,4.69,4.71,4.68,4.68,4.67,4.7"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="algorand" src="https://assets.coingecko.com/coins/images/4380/thumb/download.png" height="25"></span><span>Algorand</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.18811000000000" data-live-price="algorand" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.18816</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.18811000000000" data-live-price="algorand" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.18816</span>
+</div>
+<span class="mcw-list-change down">0.92%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.188119,0.190234,0.188361,0.1831,0.181751,0.182508,0.182927,0.18161,0.183264,0.183891,0.184822,0.182019,0.182163,0.184896,0.185416,0.184855,0.186832,0.186692,0.186809,0.187866,0.187067,0.187702,0.18713,0.18811"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="eos" src="https://assets.coingecko.com/coins/images/738/thumb/eos-eos-logo.png" height="25"></span><span>EOS</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.99457200000000" data-live-price="eos" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.994839</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.99457200000000" data-live-price="eos" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.994839</span>
+</div>
+<span class="mcw-list-change down">5.32%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="1.042,1.043,1.037,1.013,0.981386,0.984062,0.979225,0.966915,0.970738,0.96967,0.973261,0.966438,0.970943,0.983853,0.985311,0.983016,0.993979,0.990775,0.991337,0.994435,0.988658,0.990564,0.991763,0.994572"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="frax" src="https://assets.coingecko.com/coins/images/13422/thumb/ethCanonicalFRAX.png" height="25"></span><span>Frax</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.97157500000000" data-live-price="frax" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.971835</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.97157500000000" data-live-price="frax" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.971835</span>
+</div>
+<span class="mcw-list-change down">1.08%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.940475,0.939505,0.89772,0.88608,0.907403,0.908734,0.906709,0.905062,0.904084,0.906546,0.908422,0.915004,0.915506,0.931049,0.941042,0.943406,0.971129,0.953314,0.94911,0.958888,0.96179,0.973871,0.968015,0.971575"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="the-graph" src="https://assets.coingecko.com/coins/images/13397/thumb/Graph_Token.png" height="25"></span><span>The Graph</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.11329700000000" data-live-price="the-graph" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.113327</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.11329700000000" data-live-price="the-graph" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.113327</span>
+</div>
+<span class="mcw-list-change down">3.58%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.11656,0.117569,0.116873,0.113639,0.112882,0.112801,0.112375,0.111288,0.112299,0.111667,0.112364,0.109656,0.110463,0.111977,0.112204,0.11293,0.114297,0.113112,0.113337,0.114138,0.112806,0.112669,0.11236,0.113297"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="elrond-erd-2" src="https://assets.coingecko.com/coins/images/12335/thumb/egld-token-logo.png" height="25"></span><span>MultiversX</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="38.47000000000000" data-live-price="multiversx" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>38.48</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="38.47000000000000" data-live-price="multiversx" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>38.48</span>
+</div>
+<span class="mcw-list-change up">0.61%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="38.27,38.44,38.55,37.75,36.63,37.55,37.09,36.88,37.16,37.07,37.17,36.64,36.69,37.17,37.36,37.38,38.01,37.88,37.7,38.3,38.21,38.38,38.3,38.47"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="aave" src="https://assets.coingecko.com/coins/images/12645/thumb/AAVE.png" height="25"></span><span>Aave</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="67.40000000000001" data-live-price="aave" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>67.42</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="67.40000000000001" data-live-price="aave" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>67.42</span>
+</div>
+<span class="mcw-list-change down">2.39%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="68.09,68.39,68.03,66.95,66.13,65.92,65.43,65.07,65.53,65.23,65.44,64.22,64.32,65.3,65.78,65.54,66.29,66.33,66.46,66.82,66.41,67.05,66.78,67.4"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="huobi-btc" src="https://assets.coingecko.com/coins/images/12407/thumb/Unknown-5.png" height="25"></span><span>Huobi BTC</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="106530.00000000000000" data-live-price="huobi-btc" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>106,558.55</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="106530.00000000000000" data-live-price="huobi-btc" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>106,558.55</span>
+</div>
+<span class="mcw-list-change up">427.87%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="11010.21,11010.21,11010.21,11010.21,11010.21,11010.21,11010.21,11010.21,11010.21,11010.21,20181,20079,20046,105352,105862,105563,106345,106074,106235,106723,106702,106847,106220,106530"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="the-sandbox" src="https://assets.coingecko.com/coins/images/12129/thumb/sandbox_logo.jpg" height="25"></span><span>The Sandbox</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.52760400000000" data-live-price="the-sandbox" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.527745</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.52760400000000" data-live-price="the-sandbox" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.527745</span>
+</div>
+<span class="mcw-list-change down">2.79%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.535502,0.540954,0.534783,0.525109,0.519612,0.521627,0.518467,0.517698,0.517862,0.516513,0.518006,0.511372,0.513337,0.520811,0.523394,0.521385,0.52703,0.526356,0.526311,0.528271,0.527526,0.526326,0.526727,0.527604"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="decentraland" src="https://assets.coingecko.com/coins/images/878/thumb/decentraland-mana.png" height="25"></span><span>Decentraland</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.51830300000000" data-live-price="decentraland" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.518442</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.51830300000000" data-live-price="decentraland" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.518442</span>
+</div>
+<span class="mcw-list-change down">3.19%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.526797,0.531489,0.526908,0.517022,0.511136,0.51159,0.509407,0.505225,0.506033,0.50389,0.507264,0.500842,0.501167,0.508594,0.512201,0.510127,0.517236,0.512757,0.516662,0.518351,0.513702,0.515017,0.514357,0.518303"></canvas></div>
+</div>
+</div>
+<div class="mcw-list-item mcw-custom-theme mcw-list-shadow  mcw-list-rounded">
+<div class="mcw-list-header"><div class="mcw-list-row">
+<div class="mcw-list-column">
+<span class="coin-img"><img decoding="async" alt="fantom" src="https://assets.coingecko.com/coins/images/4001/thumb/Fantom_round.png" height="25"></span><span>Fantom</span>
+</div>
+<div class="mcw-list-column"><span class="mcw-list-price" data-price="0.33535300000000" data-live-price="fantom" data-rate="1.000268" data-currency="USD"><b class="fiat-symbol">$</b> <span>0.335443</span></span></div>
+<i></i>
+</div></div>
+<div class="mcw-list-body">
+<div class="mcw-list-price" data-price="0.33535300000000" data-live-price="fantom" data-rate="1.000268" data-currency="USD">
+<b class="fiat-symbol">$</b> <span>0.335443</span>
+</div>
+<span class="mcw-list-change down">1.05%</span><div class="chart-wrapper" style="width: 100%; height: 100px;"><canvas width="135" height="40" data-rate="1.000268" data-currency="USD" data-color="0,87,252" data-gradient="140" data-border="2" data-points="0.333721,0.336409,0.332297,0.322996,0.319953,0.322142,0.320724,0.317158,0.319844,0.317324,0.318319,0.312109,0.313961,0.320593,0.32275,0.322815,0.32836,0.329464,0.332881,0.335037,0.331224,0.331882,0.330761,0.335353"></canvas></div>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+
+		<style id="skip-link-styles">.skip-link.screen-reader-text {
+			border: 0;
+			clip: rect(1px,1px,1px,1px);
+			clip-path: inset(50%);
+			height: 1px;
+			margin: -1px;
+			overflow: hidden;
+			padding: 0;
+			position: absolute !important;
+			width: 1px;
+			word-wrap: normal !important;
+		}
+
+		.skip-link.screen-reader-text:focus {
+			background-color: #eee;
+			clip: auto !important;
+			clip-path: none;
+			color: #444;
+			display: block;
+			font-size: 1em;
+			height: auto;
+			left: 5px;
+			line-height: normal;
+			padding: 15px 23px 14px;
+			text-decoration: none;
+			top: 5px;
+			width: auto;
+			z-index: 100000;
+		}</style>
+		<script>( function() {
+		var skipLinkTarget = document.querySelector( 'main' ),
+			sibling,
+			skipLinkTargetID,
+			skipLink;
+
+		// Early exit if a skip-link target can't be located.
+		if ( ! skipLinkTarget ) {
+			return;
+		}
+
+		// Get the site wrapper.
+		// The skip-link will be injected in the beginning of it.
+		sibling = document.querySelector( '.wp-site-blocks' );
+
+		// Early exit if the root element was not found.
+		if ( ! sibling ) {
+			return;
+		}
+
+		// Get the skip-link target's ID, and generate one if it doesn't exist.
+		skipLinkTargetID = skipLinkTarget.id;
+		if ( ! skipLinkTargetID ) {
+			skipLinkTargetID = 'wp--skip-link--target';
+			skipLinkTarget.id = skipLinkTargetID;
+		}
+
+		// Create the skip link.
+		skipLink = document.createElement( 'a' );
+		skipLink.classList.add( 'skip-link', 'screen-reader-text' );
+		skipLink.href = '#' + skipLinkTargetID;
+		skipLink.innerHTML = 'Skip to content';
+
+		// Inject the skip link.
+		sibling.parentElement.insertBefore( skipLink, sibling );
+	}() );</script>
+	<script src="./../assets/js/socket.io.js" id="mcw-crypto-socket-io-js"></script>
+<!--[if lt IE 9]>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/es5-shim/2.0.8/es5-shim.min.js' id='mcw-crypto-es5-js'></script>
+<![endif]-->
+<script src="./../assets/js/selectize.min.js" id="mcw-crypto-select-js"></script>
+<script id="mcw-crypto-common-js-extra">var mcw = {"url":".\/\/wp-content\/plugins\/massive-cryptocurrency-widgets\/","ajax_url":".\/\/wp-admin\/admin-ajax.php","currency_format":{"USD":{"iso":"USD","symbol":"$","position":"{symbol}{space}{price}","thousands_sep":",","decimals_sep":".","decimals":"2"},"EUR":{"iso":"EUR","symbol":"€","position":"{price}{space}{symbol}","thousands_sep":".","decimals_sep":",","decimals":"2"},"INR":{"iso":"INR","symbol":"₹","position":"{symbol}{space}{price}","thousands_sep":",","decimals_sep":".","decimals":"2"}},"default_currency_format":{"iso":"USD","symbol":"","position":"{symbol}{price}","thousands_sep":",","decimals_sep":".","decimals":"2"},"text":{"previous":"Previous","next":"Next","lengthmenu":"Coins per page: _MENU_"},"api":"coingecko"};</script>
+<script src="./../assets/js/common.min.js" id="mcw-crypto-common-js"></script>
 </body>
-<script src="https://www.cryptohopper.com/widgets/js/script"></script>
 </html>
