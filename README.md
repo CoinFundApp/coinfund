@@ -26,6 +26,9 @@ If you'd like to contribute to this project, please feel free to submit a pull r
 
 ## Censorship-resistant access: 
 
+- TOR
+http://j37wkrgo5pbwtkljmrcwhqphl7i635glhplyd3udxc5bcoisvcsaulad.onion
+
 - IPFS
 ipfs://QmTVpdD7t397nHsF7vxXdbbEpEMeQZkXFFvfbkjc2Twx3E
 
