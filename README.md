@@ -24,7 +24,7 @@ The CoinFundIt.com service is designed with security and privacy in mind. The se
 This service is not affiliated with any other cryptocurrency project. The service is offered "as is" without warranty of any kind, either expressed or implied. The creators of this service do not view or save your private key, view or save your master seed phrase, and are not responsible for any damages or losses resulting from misuse or negligence.
 
 ## Contributing
-If you'd like to contribute to this project, please feel free to submit a Pull Request or open an issue on this GitHub repository. Additionally, help us fight censorship by contributing a relay server! We welcome contributions from all members of the crypto community.
+If you'd like to contribute to this project, please feel free to submit a Pull Request or open an issue on this GitHub repository. Additionally, help us fight censorship by contributing a <a href="https://github.com/Spl0itable/backend_invoices">relay server</a>! We welcome contributions from all members of the crypto community.
 
 ## Censorship-resistant access: 
 
