@@ -104,13 +104,6 @@
       var HYVOR_TALK_CONFIG = { url: false, id: false };
     
       function loadHyvorTalk() {
-        // Remove the previous script element if it exists
-        var existingScript = document.querySelector('script[src="https://talk.hyvor.com/web-api/embed.js"]');
-        if (existingScript) {
-          existingScript.remove();
-        }
-    
-        // Append a new script element
         var script = document.createElement('script');
         script.type = 'text/javascript';
         script.async = true;
@@ -122,19 +115,11 @@
         var hyvorTalkView = document.getElementById('hyvor-talk-view');
         if (hyvorTalkView) {
           loadHyvorTalk();
+          clearInterval(intervalId);
         }
       }
     
-      // Function to reset the interval
-      function resetInterval() {
-        clearInterval(intervalId);
-        intervalId = setInterval(checkForHyvorTalkView, 100);
-      }
-    
       var intervalId = setInterval(checkForHyvorTalkView, 100);
-    
-      // Listen for the custom event
-      window.addEventListener('loadHyvorTalkWidget', resetInterval);
     </script>
   <script type="text/javascript" src="https://talk.hyvor.com/web-api/embed.js"></script>
   </body>

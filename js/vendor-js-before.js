@@ -124,5 +124,3 @@ function handleKeyPress(e) {
     e.preventDefault();
   }
 }
-const event = new CustomEvent('loadHyvorTalkWidget');
-window.dispatchEvent(event);
