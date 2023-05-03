@@ -115,11 +115,12 @@
         var hyvorTalkView = document.getElementById('hyvor-talk-view');
         if (hyvorTalkView) {
           loadHyvorTalk();
-          clearInterval(intervalId);
+          observer.disconnect(); // stop observing once the target element is found and the widget is loaded
         }
       }
     
-      var intervalId = setInterval(checkForHyvorTalkView, 100);
+      var observer = new MutationObserver(checkForHyvorTalkView);
+      observer.observe(document.body, { childList: true, subtree: true });
     </script>
   <script type="text/javascript" src="https://talk.hyvor.com/web-api/embed.js"></script>
   </body>
