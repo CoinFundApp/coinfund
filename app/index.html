@@ -103,24 +103,23 @@
       var HYVOR_TALK_WEBSITE = 8859;
       var HYVOR_TALK_CONFIG = { url: false, id: false };
     
-      (function init() {
-        function loadHyvorTalk() {
-          var script = document.createElement('script');
-          script.type = 'text/javascript';
-          script.async = true;
-          script.src = 'https://talk.hyvor.com/web-api/embed.js';
-          document.body.appendChild(script);
-        }
+      function loadHyvorTalk() {
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.src = 'https://talk.hyvor.com/web-api/embed.js';
+        document.body.appendChild(script);
+      }
     
-        function checkForHyvorTalkView() {
-          var hyvorTalkView = document.getElementById('hyvor-talk-view');
-          if (hyvorTalkView) {
-            loadHyvorTalk();
-          }
+      function checkForHyvorTalkView() {
+        var hyvorTalkView = document.getElementById('hyvor-talk-view');
+        if (hyvorTalkView) {
+          loadHyvorTalk();
+          clearInterval(intervalId);
         }
+      }
     
-        setInterval(checkForHyvorTalkView, 100);
-      })();
+      var intervalId = setInterval(checkForHyvorTalkView, 100);
     </script>
   <script type="text/javascript" src="https://talk.hyvor.com/web-api/embed.js"></script>
   </body>
