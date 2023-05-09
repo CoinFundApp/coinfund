@@ -37,8 +37,13 @@
         <link rel="stylesheet" href="../css/wallet.css" />
         <script type="text/javascript" src="../js/load-app.js" id="app-js"></script>
         <script>
-            const currentUrl = window.location.href;
-            document.getElementById("canonical-link").setAttribute("href", currentUrl);
+            document.addEventListener('DOMContentLoaded', function() {
+                // Get the current URL
+                const currentUrl = window.location.href;
+        
+                // Set the canonical URL to the current URL
+                document.getElementById('canonical-link').setAttribute('href', currentUrl);
+            });
         </script>
     </head>
     <body class="blog sala-dark-scheme fullwidth page-title-04 elementor-default elementor-kit-3655">
