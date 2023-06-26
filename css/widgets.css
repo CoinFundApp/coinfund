@@ -1,2 +1,2 @@
-@media (prefers-color-scheme: dark){ul.mcw-news a.mcw-n-title {color: #FFFFFF;}}
-@media (prefers-color-scheme: light){body, #mcw-8.cryptoboxes .mcw-list-2 .mcw-list-item {background-color: #FFFFFF;}ul.mcw-news a.mcw-n-title, ul.mcw-news a.mcw-n-title {color: #111111;}#mcw-8.cryptoboxes .mcw-list{color:#111111;}.mcw-list-shadow{box-shadow:none;}}
+@media (prefers-color-scheme: dark){ul.mcw-news a.mcw-n-title {color: #FFFFFF!important;}}
+@media (prefers-color-scheme: light){body, #mcw-8.cryptoboxes .mcw-list-2 .mcw-list-item {background-color: #FFFFFF!important;}ul.mcw-news a.mcw-n-title, ul.mcw-news a.mcw-n-title {color: #111111!important;}#mcw-8.cryptoboxes .mcw-list{color:#111111!important;}.mcw-list-shadow{box-shadow:none!important;}}
