@@ -31,9 +31,7 @@ If you'd like to contribute to this project, please feel free to submit a Pull R
 - IPFS
 https://wild-cake-0792.on.fleek.co/
 
-IPFS Hash: Qmcq98chbdTpdBpkUQqqMyUEBP4hDWsjy6jduk7tUnduiX
+CID: Qmcq98chbdTpdBpkUQqqMyUEBP4hDWsjy6jduk7tUnduiX
 
 - Internet Computer
 https://25p64-aaaaa-aaaad-qetiq-cai.ic.fleek.co/
-
-Canister ID: 25p64-aaaaa-aaaad-qetiq-cai
