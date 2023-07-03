@@ -29,7 +29,7 @@ If you'd like to contribute to this project, please feel free to submit a Pull R
 ## Censorship-resistant access: 
 
 - IPFS
-ipfs://QmTVpdD7t397nHsF7vxXdbbEpEMeQZkXFFvfbkjc2Twx3E
+https://wild-cake-0792.on.fleek.co/
 
 - Internet Computer
 https://25p64-aaaaa-aaaad-qetiq-cai.ic.fleek.co/
