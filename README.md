@@ -31,7 +31,7 @@ If you'd like to contribute to this project, please feel free to submit a Pull R
 - IPFS
 https://wild-cake-0792.on.fleek.co/
 
-    - CID: QmQiuHcDV8Jdn6MspWNVQ9EAmvxSGaY2kFLizroiGVhvQL
+    - CID: QmSmvWcHF6iCQ2pKuU5gVtReBcam4GJPdR9WUkqntxawov
 
 - Internet Computer
 https://25p64-aaaaa-aaaad-qetiq-cai.ic.fleek.co/
