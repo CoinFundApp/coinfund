@@ -1,4 +1,4 @@
-# CoinFundIt.com - Crypto Crowfunding & Donations
+# CoinFund - Crypto Crowfunding & Donations App
 
 <img src="https://coinfundit.com/images/CFI-featured.png">
 
