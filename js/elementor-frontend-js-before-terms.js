@@ -107,7 +107,7 @@ var elementorFrontendConfig = {
   },
   "post": {
     "id": 17552,
-    "title": "Terms%20of%20use%20%E2%80%93%20CoinFundIt.com",
+    "title": "Terms%20of%20use%20%E2%80%93%20CoinFund",
     "excerpt": "",
     "featuredImage": false
   }

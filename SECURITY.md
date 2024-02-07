@@ -2,4 +2,4 @@
 
 ## Reporting a Vulnerability
 
-To disclose a vulnerability in the CoinFundIt.com application, please contact us at https://coinfundit.com/contact/
+To disclose a vulnerability in the CoinFund application, please contact us at https://coinfund.app/contact/

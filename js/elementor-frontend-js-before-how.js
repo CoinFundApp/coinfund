@@ -107,7 +107,7 @@ var elementorFrontendConfig = {
   },
   "post": {
     "id": 17586,
-    "title": "How%20to%20get%20crypto%20crowdfunded%20or%20donations%20%E2%80%93%20CoinFundIt.com",
+    "title": "How%20to%20get%20crypto%20crowdfunded%20or%20donations%20%E2%80%93%20CoinFund",
     "excerpt": "",
     "featuredImage": false
   }

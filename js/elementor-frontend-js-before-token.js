@@ -107,7 +107,7 @@ var elementorFrontendConfig = {
   },
   "post": {
     "id": 2984,
-    "title": "CFI%20Token%20%E2%80%93%20CoinFundIt.com",
+    "title": "CFI%20Token%20%E2%80%93%20CoinFund",
     "excerpt": "",
     "featuredImage": false
   }

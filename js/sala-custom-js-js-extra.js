@@ -1,7 +1,7 @@
 /*
 <![CDATA[ */
 var theme_vars = {
-  "ajax_url": "https:\/\/coinfundit.com\/wp-admin\/admin-ajax.php",
+  "ajax_url": "https:\/\/coinfund.app\/wp-admin\/admin-ajax.php",
   "header_sticky": "",
   "content_protected_enable": "0",
   "scroll_top_enable": "0",

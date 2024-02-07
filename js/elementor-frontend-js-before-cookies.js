@@ -107,7 +107,7 @@ var elementorFrontendConfig = {
   },
   "post": {
     "id": 17557,
-    "title": "Cookies%20policy%20%E2%80%93%20CoinFundIt.com",
+    "title": "Cookies%20policy%20%E2%80%93%20CoinFund",
     "excerpt": "",
     "featuredImage": false
   }

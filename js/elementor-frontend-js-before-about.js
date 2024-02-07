@@ -107,7 +107,7 @@ var elementorFrontendConfig = {
   },
   "post": {
     "id": 9119,
-    "title": "About%20%E2%80%93%20CoinFundIt.com",
+    "title": "About%20%E2%80%93%20CoinFund",
     "excerpt": "",
     "featuredImage": false
   }

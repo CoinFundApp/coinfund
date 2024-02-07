@@ -5,7 +5,7 @@
              "appIDs": [ "Y99N97ZJ87.com.coinfundit.wallet" ],
              "components": [
                {
-                  "/": "/app/*",
+                  "/": "/wallet/*",
                   "comment": "Opens any app link."
                }
              ]

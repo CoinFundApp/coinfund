@@ -107,8 +107,8 @@ var elementorFrontendConfig = {
   },
   "post": {
     "id": 6544,
-    "title": "Why%20self-custody%20cryptocurrency%20wallets%20are%20censorship-resistant%20%E2%80%93%20CoinFundIt.com",
+    "title": "Why%20self-custody%20cryptocurrency%20wallets%20are%20censorship-resistant%20%E2%80%93%20CoinFund",
     "excerpt": "",
-    "featuredImage": "https:\/\/coinfundit.com\/wp-content\/uploads\/2021\/08\/bitcoin-graphic-1024x684.jpeg"
+    "featuredImage": "https:\/\/coinfund.app\/wp-content\/uploads\/2021\/08\/bitcoin-graphic-1024x684.jpeg"
   }
 };

@@ -8,8 +8,8 @@ Allow: /images
 Allow: /js/*
 Allow: /js
 Allow: /$
-Allow: /app/*
-Allow: /app
+Allow: /wallet/*
+Allow: /wallet
 Allow: /about/*
 Allow: /about
 Allow: /aup/*
@@ -39,4 +39,4 @@ Allow: /why-self-custody-cryptocurrency-wallets-are-censorship-resistant
 Allow: /robots.txt
 Allow: /sitemap.xml
 
-Sitemap: https://coinfundit.com/sitemap.xml
+Sitemap: https://coinfund.app/sitemap.xml

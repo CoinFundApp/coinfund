@@ -107,7 +107,7 @@ var elementorFrontendConfig = {
   },
   "post": {
     "id": 17564,
-    "title": "Acceptable%20use%20policy%20%E2%80%93%20CoinFundIt.com",
+    "title": "Acceptable%20use%20policy%20%E2%80%93%20CoinFund",
     "excerpt": "",
     "featuredImage": false
   }
