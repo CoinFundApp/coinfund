@@ -29,9 +29,9 @@ If you'd like to contribute to this project, please feel free to submit a Pull R
 ## Censorship-resistant access: 
 
 - IPFS
-https://wild-cake-0792.on.fleek.co/
+https://coinfund.on.fleek.co/
 
-    - CID: QmSmvWcHF6iCQ2pKuU5gVtReBcam4GJPdR9WUkqntxawov
+    - CID: QmQB5u753ncZuMviEV2V7MBiq6brYVSZ4tKiuR4gYXQvL6
 
 - Internet Computer
 https://25p64-aaaaa-aaaad-qetiq-cai.ic.fleek.co/
