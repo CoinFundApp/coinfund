@@ -9,7 +9,7 @@ Decentralized, non-custodial, non-KYC Bitcoin and Altcoin crypto crowdfunding, d
 - Android and iOS app source code <a href="https://github.com/CoinFundApp/cfi-app/tree/flutterflow">here</a>.
 
 ## How it works
-Use the CoinFund service to generate a Bitcoin (BIP-32) hot wallet using a master seed phrase. The master seed phrase is equally used for Ethereum-based tokens and wallets.
+Use the CoinFund service to generate a Bitcoin (BIP-32) hot wallet using a master seed phrase. The master seed phrase is equally used for Ethereum-based ERC-20 tokens and wallets.
 
 Once a wallet is generated, a new crowdfunding or donations campagin can be initiated. See further tutorial <a href="https://coinfund.app/how/">here</a>. A campaign URL is dynamically generated, which can be shared across social media to drive visibility to the campaign. Each campaign is published across relays found in the `/js/relays.js` file. By publishing campaign data across all contributing relays, this further enhances the censorship-resistance of our platform. 
 
