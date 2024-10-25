@@ -89,7 +89,7 @@ var elementorFrontendConfig = {
     "admin-top-bar": true
   },
   "urls": {
-    "assets": "../"
+    "assets": "https://coinfund.app/"
   },
   "settings": {
     "page": [],

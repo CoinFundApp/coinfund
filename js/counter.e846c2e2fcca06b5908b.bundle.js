@@ -2,7 +2,7 @@
 "use strict";
 (self["webpackChunkelementor"] = self["webpackChunkelementor"] || []).push([["counter"],{
 
-/***/ "../assets/dev/js/frontend/handlers/counter.js":
+/***/ "https://coinfund.app/assets/dev/js/frontend/handlers/counter.js":
 /*!*****************************************************!*\
   !*** ../assets/dev/js/frontend/handlers/counter.js ***!
   \*****************************************************/
