@@ -1,7 +1,7 @@
 /*! elementor - v3.7.8 - 02-10-2022 */
 (self["webpackChunkelementor"] = self["webpackChunkelementor"] || []).push([["frontend"],{
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/documents-manager.js":
+/***/ "../assets/dev/js/frontend/documents-manager.js":
 /*!******************************************************!*\
   !*** ../assets/dev/js/frontend/documents-manager.js ***!
   \******************************************************/
@@ -10,14 +10,14 @@
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "https://coinfund.app/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports["default"] = void 0;
 
-var _document = _interopRequireDefault(__webpack_require__(/*! ./document */ "https://coinfund.app/assets/dev/js/frontend/document.js"));
+var _document = _interopRequireDefault(__webpack_require__(/*! ./document */ "../assets/dev/js/frontend/document.js"));
 
 class _default extends elementorModules.ViewModule {
   constructor() {
@@ -74,7 +74,7 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/elements-handlers-manager.js":
+/***/ "../assets/dev/js/frontend/elements-handlers-manager.js":
 /*!**************************************************************!*\
   !*** ../assets/dev/js/frontend/elements-handlers-manager.js ***!
   \**************************************************************/
@@ -83,21 +83,21 @@ exports["default"] = _default;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "https://coinfund.app/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
-var _global = _interopRequireDefault(__webpack_require__(/*! ./handlers/global */ "https://coinfund.app/assets/dev/js/frontend/handlers/global.js"));
+var _global = _interopRequireDefault(__webpack_require__(/*! ./handlers/global */ "../assets/dev/js/frontend/handlers/global.js"));
 
-var _background = _interopRequireDefault(__webpack_require__(/*! ./handlers/background */ "https://coinfund.app/assets/dev/js/frontend/handlers/background.js"));
+var _background = _interopRequireDefault(__webpack_require__(/*! ./handlers/background */ "../assets/dev/js/frontend/handlers/background.js"));
 
-var _container = _interopRequireDefault(__webpack_require__(/*! ./handlers/container/container */ "https://coinfund.app/assets/dev/js/frontend/handlers/container/container.js"));
+var _container = _interopRequireDefault(__webpack_require__(/*! ./handlers/container/container */ "../assets/dev/js/frontend/handlers/container/container.js"));
 
-var _column = _interopRequireDefault(__webpack_require__(/*! ./handlers/column */ "https://coinfund.app/assets/dev/js/frontend/handlers/column.js"));
+var _column = _interopRequireDefault(__webpack_require__(/*! ./handlers/column */ "../assets/dev/js/frontend/handlers/column.js"));
 
-var _handlesPosition = _interopRequireDefault(__webpack_require__(/*! ./handlers/section/handles-position */ "https://coinfund.app/assets/dev/js/frontend/handlers/section/handles-position.js"));
+var _handlesPosition = _interopRequireDefault(__webpack_require__(/*! ./handlers/section/handles-position */ "../assets/dev/js/frontend/handlers/section/handles-position.js"));
 
-var _stretchedSection = _interopRequireDefault(__webpack_require__(/*! ./handlers/section/stretched-section */ "https://coinfund.app/assets/dev/js/frontend/handlers/section/stretched-section.js"));
+var _stretchedSection = _interopRequireDefault(__webpack_require__(/*! ./handlers/section/stretched-section */ "../assets/dev/js/frontend/handlers/section/stretched-section.js"));
 
-var _shapes = _interopRequireDefault(__webpack_require__(/*! ./handlers/section/shapes */ "https://coinfund.app/assets/dev/js/frontend/handlers/section/shapes.js"));
+var _shapes = _interopRequireDefault(__webpack_require__(/*! ./handlers/section/shapes */ "../assets/dev/js/frontend/handlers/section/shapes.js"));
 
 // Section handlers.
 module.exports = function ($) {
@@ -105,16 +105,16 @@ module.exports = function ($) {
 
   const handlersInstances = {};
   this.elementsHandlers = {
-    'accordion.default': () => __webpack_require__.e(/*! import() | accordion */ "accordion").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/accordion */ "https://coinfund.app/assets/dev/js/frontend/handlers/accordion.js")),
-    'alert.default': () => __webpack_require__.e(/*! import() | alert */ "alert").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/alert */ "https://coinfund.app/assets/dev/js/frontend/handlers/alert.js")),
-    'counter.default': () => __webpack_require__.e(/*! import() | counter */ "counter").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/counter */ "https://coinfund.app/assets/dev/js/frontend/handlers/counter.js")),
-    'progress.default': () => __webpack_require__.e(/*! import() | progress */ "progress").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/progress */ "https://coinfund.app/assets/dev/js/frontend/handlers/progress.js")),
-    'tabs.default': () => __webpack_require__.e(/*! import() | tabs */ "tabs").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/tabs */ "https://coinfund.app/assets/dev/js/frontend/handlers/tabs.js")),
-    'toggle.default': () => __webpack_require__.e(/*! import() | toggle */ "toggle").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/toggle */ "https://coinfund.app/assets/dev/js/frontend/handlers/toggle.js")),
-    'video.default': () => __webpack_require__.e(/*! import() | video */ "video").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/video */ "https://coinfund.app/assets/dev/js/frontend/handlers/video.js")),
-    'image-carousel.default': () => __webpack_require__.e(/*! import() | image-carousel */ "image-carousel").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/image-carousel */ "https://coinfund.app/assets/dev/js/frontend/handlers/image-carousel.js")),
-    'text-editor.default': () => __webpack_require__.e(/*! import() | text-editor */ "text-editor").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/text-editor */ "https://coinfund.app/assets/dev/js/frontend/handlers/text-editor.js")),
-    'wp-widget-media_audio.default': () => __webpack_require__.e(/*! import() | wp-audio */ "wp-audio").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/wp-audio */ "https://coinfund.app/assets/dev/js/frontend/handlers/wp-audio.js"))
+    'accordion.default': () => __webpack_require__.e(/*! import() | accordion */ "accordion").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/accordion */ "../assets/dev/js/frontend/handlers/accordion.js")),
+    'alert.default': () => __webpack_require__.e(/*! import() | alert */ "alert").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/alert */ "../assets/dev/js/frontend/handlers/alert.js")),
+    'counter.default': () => __webpack_require__.e(/*! import() | counter */ "counter").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/counter */ "../assets/dev/js/frontend/handlers/counter.js")),
+    'progress.default': () => __webpack_require__.e(/*! import() | progress */ "progress").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/progress */ "../assets/dev/js/frontend/handlers/progress.js")),
+    'tabs.default': () => __webpack_require__.e(/*! import() | tabs */ "tabs").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/tabs */ "../assets/dev/js/frontend/handlers/tabs.js")),
+    'toggle.default': () => __webpack_require__.e(/*! import() | toggle */ "toggle").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/toggle */ "../assets/dev/js/frontend/handlers/toggle.js")),
+    'video.default': () => __webpack_require__.e(/*! import() | video */ "video").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/video */ "../assets/dev/js/frontend/handlers/video.js")),
+    'image-carousel.default': () => __webpack_require__.e(/*! import() | image-carousel */ "image-carousel").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/image-carousel */ "../assets/dev/js/frontend/handlers/image-carousel.js")),
+    'text-editor.default': () => __webpack_require__.e(/*! import() | text-editor */ "text-editor").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/text-editor */ "../assets/dev/js/frontend/handlers/text-editor.js")),
+    'wp-widget-media_audio.default': () => __webpack_require__.e(/*! import() | wp-audio */ "wp-audio").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/wp-audio */ "../assets/dev/js/frontend/handlers/wp-audio.js"))
   };
 
   const addGlobalHandlers = () => elementorFrontend.hooks.addAction('frontend/element_ready/global', _global.default);
@@ -263,7 +263,7 @@ module.exports = function ($) {
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/frontend.js":
+/***/ "../assets/dev/js/frontend/frontend.js":
 /*!*********************************************!*\
   !*** ../assets/dev/js/frontend/frontend.js ***!
   \*********************************************/
@@ -272,47 +272,47 @@ module.exports = function ($) {
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "https://coinfund.app/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports["default"] = void 0;
 
-__webpack_require__(/*! ../public-path */ "https://coinfund.app/assets/dev/js/public-path.js");
+__webpack_require__(/*! ../public-path */ "../assets/dev/js/public-path.js");
 
-var _documentsManager = _interopRequireDefault(__webpack_require__(/*! ./documents-manager */ "https://coinfund.app/assets/dev/js/frontend/documents-manager.js"));
+var _documentsManager = _interopRequireDefault(__webpack_require__(/*! ./documents-manager */ "../assets/dev/js/frontend/documents-manager.js"));
 
-var _storage = _interopRequireDefault(__webpack_require__(/*! elementor-common/utils/storage */ "https://coinfund.app/core/common/assets/js/utils/storage.js"));
+var _storage = _interopRequireDefault(__webpack_require__(/*! elementor-common/utils/storage */ "../core/common/assets/js/utils/storage.js"));
 
-var _environment = _interopRequireDefault(__webpack_require__(/*! elementor-common/utils/environment */ "https://coinfund.app/core/common/assets/js/utils/environment.js"));
+var _environment = _interopRequireDefault(__webpack_require__(/*! elementor-common/utils/environment */ "../core/common/assets/js/utils/environment.js"));
 
-var _youtubeLoader = _interopRequireDefault(__webpack_require__(/*! ./utils/video-api/youtube-loader */ "https://coinfund.app/assets/dev/js/frontend/utils/video-api/youtube-loader.js"));
+var _youtubeLoader = _interopRequireDefault(__webpack_require__(/*! ./utils/video-api/youtube-loader */ "../assets/dev/js/frontend/utils/video-api/youtube-loader.js"));
 
-var _vimeoLoader = _interopRequireDefault(__webpack_require__(/*! ./utils/video-api/vimeo-loader */ "https://coinfund.app/assets/dev/js/frontend/utils/video-api/vimeo-loader.js"));
+var _vimeoLoader = _interopRequireDefault(__webpack_require__(/*! ./utils/video-api/vimeo-loader */ "../assets/dev/js/frontend/utils/video-api/vimeo-loader.js"));
 
-var _baseLoader = _interopRequireDefault(__webpack_require__(/*! ./utils/video-api/base-loader */ "https://coinfund.app/assets/dev/js/frontend/utils/video-api/base-loader.js"));
+var _baseLoader = _interopRequireDefault(__webpack_require__(/*! ./utils/video-api/base-loader */ "../assets/dev/js/frontend/utils/video-api/base-loader.js"));
 
-var _urlActions = _interopRequireDefault(__webpack_require__(/*! ./utils/url-actions */ "https://coinfund.app/assets/dev/js/frontend/utils/url-actions.js"));
+var _urlActions = _interopRequireDefault(__webpack_require__(/*! ./utils/url-actions */ "../assets/dev/js/frontend/utils/url-actions.js"));
 
-var _swiper = _interopRequireDefault(__webpack_require__(/*! ./utils/swiper */ "https://coinfund.app/assets/dev/js/frontend/utils/swiper.js"));
+var _swiper = _interopRequireDefault(__webpack_require__(/*! ./utils/swiper */ "../assets/dev/js/frontend/utils/swiper.js"));
 
-var _lightboxManager = _interopRequireDefault(__webpack_require__(/*! ./utils/lightbox/lightbox-manager */ "https://coinfund.app/assets/dev/js/frontend/utils/lightbox/lightbox-manager.js"));
+var _lightboxManager = _interopRequireDefault(__webpack_require__(/*! ./utils/lightbox/lightbox-manager */ "../assets/dev/js/frontend/utils/lightbox/lightbox-manager.js"));
 
-var _assetsLoader = _interopRequireDefault(__webpack_require__(/*! ./utils/assets-loader */ "https://coinfund.app/assets/dev/js/frontend/utils/assets-loader.js"));
+var _assetsLoader = _interopRequireDefault(__webpack_require__(/*! ./utils/assets-loader */ "../assets/dev/js/frontend/utils/assets-loader.js"));
 
-var _breakpoints = _interopRequireDefault(__webpack_require__(/*! elementor-utils/breakpoints */ "https://coinfund.app/assets/dev/js/utils/breakpoints.js"));
+var _breakpoints = _interopRequireDefault(__webpack_require__(/*! elementor-utils/breakpoints */ "../assets/dev/js/utils/breakpoints.js"));
 
-var _events = _interopRequireDefault(__webpack_require__(/*! elementor-utils/events */ "https://coinfund.app/assets/dev/js/utils/events.js"));
+var _events = _interopRequireDefault(__webpack_require__(/*! elementor-utils/events */ "../assets/dev/js/utils/events.js"));
 
-var _frontend = _interopRequireDefault(__webpack_require__(/*! elementor/modules/shapes/assets/js/frontend/frontend */ "https://coinfund.app/modules/shapes/assets/js/frontend/frontend.js"));
+var _frontend = _interopRequireDefault(__webpack_require__(/*! elementor/modules/shapes/assets/js/frontend/frontend */ "../modules/shapes/assets/js/frontend/frontend.js"));
 
-var _utils = __webpack_require__(/*! elementor-frontend/utils/utils */ "https://coinfund.app/assets/dev/js/frontend/utils/utils.js");
+var _utils = __webpack_require__(/*! elementor-frontend/utils/utils */ "../assets/dev/js/frontend/utils/utils.js");
 
 /* global elementorFrontendConfig */
-const EventManager = __webpack_require__(/*! elementor-utils/hooks */ "https://coinfund.app/assets/dev/js/utils/hooks.js"),
-      ElementsHandler = __webpack_require__(/*! elementor-frontend/elements-handlers-manager */ "https://coinfund.app/assets/dev/js/frontend/elements-handlers-manager.js"),
-      AnchorsModule = __webpack_require__(/*! elementor-frontend/utils/anchors */ "https://coinfund.app/assets/dev/js/frontend/utils/anchors.js");
+const EventManager = __webpack_require__(/*! elementor-utils/hooks */ "../assets/dev/js/utils/hooks.js"),
+      ElementsHandler = __webpack_require__(/*! elementor-frontend/elements-handlers-manager */ "../assets/dev/js/frontend/elements-handlers-manager.js"),
+      AnchorsModule = __webpack_require__(/*! elementor-frontend/utils/anchors */ "../assets/dev/js/frontend/utils/anchors.js");
 
 class Frontend extends elementorModules.ViewModule {
   constructor() {
@@ -668,7 +668,7 @@ if (!elementorFrontend.isEditMode()) {
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/handlers/background-slideshow.js":
+/***/ "../assets/dev/js/frontend/handlers/background-slideshow.js":
 /*!******************************************************************!*\
   !*** ../assets/dev/js/frontend/handlers/background-slideshow.js ***!
   \******************************************************************/
@@ -871,7 +871,7 @@ exports["default"] = BackgroundSlideshow;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/handlers/background-video.js":
+/***/ "../assets/dev/js/frontend/handlers/background-video.js":
 /*!**************************************************************!*\
   !*** ../assets/dev/js/frontend/handlers/background-video.js ***!
   \**************************************************************/
@@ -1165,7 +1165,7 @@ exports["default"] = BackgroundVideo;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/handlers/background.js":
+/***/ "../assets/dev/js/frontend/handlers/background.js":
 /*!********************************************************!*\
   !*** ../assets/dev/js/frontend/handlers/background.js ***!
   \********************************************************/
@@ -1174,23 +1174,23 @@ exports["default"] = BackgroundVideo;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "https://coinfund.app/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports["default"] = void 0;
 
-var _backgroundSlideshow = _interopRequireDefault(__webpack_require__(/*! ./background-slideshow */ "https://coinfund.app/assets/dev/js/frontend/handlers/background-slideshow.js"));
+var _backgroundSlideshow = _interopRequireDefault(__webpack_require__(/*! ./background-slideshow */ "../assets/dev/js/frontend/handlers/background-slideshow.js"));
 
-var _backgroundVideo = _interopRequireDefault(__webpack_require__(/*! ./background-video */ "https://coinfund.app/assets/dev/js/frontend/handlers/background-video.js"));
+var _backgroundVideo = _interopRequireDefault(__webpack_require__(/*! ./background-video */ "../assets/dev/js/frontend/handlers/background-video.js"));
 
 var _default = [_backgroundSlideshow.default, _backgroundVideo.default];
 exports["default"] = _default;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/handlers/column.js":
+/***/ "../assets/dev/js/frontend/handlers/column.js":
 /*!****************************************************!*\
   !*** ../assets/dev/js/frontend/handlers/column.js ***!
   \****************************************************/
@@ -1199,21 +1199,21 @@ exports["default"] = _default;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "https://coinfund.app/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports["default"] = void 0;
 
-var _backgroundSlideshow = _interopRequireDefault(__webpack_require__(/*! ./background-slideshow */ "https://coinfund.app/assets/dev/js/frontend/handlers/background-slideshow.js"));
+var _backgroundSlideshow = _interopRequireDefault(__webpack_require__(/*! ./background-slideshow */ "../assets/dev/js/frontend/handlers/background-slideshow.js"));
 
 var _default = [_backgroundSlideshow.default];
 exports["default"] = _default;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/handlers/container/container.js":
+/***/ "../assets/dev/js/frontend/handlers/container/container.js":
 /*!*****************************************************************!*\
   !*** ../assets/dev/js/frontend/handlers/container/container.js ***!
   \*****************************************************************/
@@ -1226,12 +1226,12 @@ Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports["default"] = void 0;
-var _default = [() => __webpack_require__.e(/*! import() | container */ "container").then(__webpack_require__.bind(__webpack_require__, /*! ./handles-position */ "https://coinfund.app/assets/dev/js/frontend/handlers/container/handles-position.js")), () => __webpack_require__.e(/*! import() | container */ "container").then(__webpack_require__.bind(__webpack_require__, /*! ./shapes */ "https://coinfund.app/assets/dev/js/frontend/handlers/container/shapes.js"))];
+var _default = [() => __webpack_require__.e(/*! import() | container */ "container").then(__webpack_require__.bind(__webpack_require__, /*! ./handles-position */ "../assets/dev/js/frontend/handlers/container/handles-position.js")), () => __webpack_require__.e(/*! import() | container */ "container").then(__webpack_require__.bind(__webpack_require__, /*! ./shapes */ "../assets/dev/js/frontend/handlers/container/shapes.js"))];
 exports["default"] = _default;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/handlers/global.js":
+/***/ "../assets/dev/js/frontend/handlers/global.js":
 /*!****************************************************!*\
   !*** ../assets/dev/js/frontend/handlers/global.js ***!
   \****************************************************/
@@ -1311,7 +1311,7 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/handlers/section/handles-position.js":
+/***/ "../assets/dev/js/frontend/handlers/section/handles-position.js":
 /*!**********************************************************************!*\
   !*** ../assets/dev/js/frontend/handlers/section/handles-position.js ***!
   \**********************************************************************/
@@ -1398,7 +1398,7 @@ exports["default"] = HandlesPosition;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/handlers/section/shapes.js":
+/***/ "../assets/dev/js/frontend/handlers/section/shapes.js":
 /*!************************************************************!*\
   !*** ../assets/dev/js/frontend/handlers/section/shapes.js ***!
   \************************************************************/
@@ -1512,7 +1512,7 @@ exports["default"] = Shapes;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/handlers/section/stretched-section.js":
+/***/ "../assets/dev/js/frontend/handlers/section/stretched-section.js":
 /*!***********************************************************************!*\
   !*** ../assets/dev/js/frontend/handlers/section/stretched-section.js ***!
   \***********************************************************************/
@@ -1604,7 +1604,7 @@ exports["default"] = StretchedSection;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/utils/anchors.js":
+/***/ "../assets/dev/js/frontend/utils/anchors.js":
 /*!**************************************************!*\
   !*** ../assets/dev/js/frontend/utils/anchors.js ***!
   \**************************************************/
@@ -1613,7 +1613,7 @@ exports["default"] = StretchedSection;
 "use strict";
 
 
-var _utils = __webpack_require__(/*! ./utils */ "https://coinfund.app/assets/dev/js/frontend/utils/utils.js");
+var _utils = __webpack_require__(/*! ./utils */ "../assets/dev/js/frontend/utils/utils.js");
 
 module.exports = elementorModules.ViewModule.extend({
   getDefaultSettings() {
@@ -1701,7 +1701,7 @@ module.exports = elementorModules.ViewModule.extend({
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/utils/assets-loader.js":
+/***/ "../assets/dev/js/frontend/utils/assets-loader.js":
 /*!********************************************************!*\
   !*** ../assets/dev/js/frontend/utils/assets-loader.js ***!
   \********************************************************/
@@ -1767,7 +1767,7 @@ AssetsLoader.assets = {
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/utils/lightbox/lightbox-manager.js":
+/***/ "../assets/dev/js/frontend/utils/lightbox/lightbox-manager.js":
 /*!********************************************************************!*\
   !*** ../assets/dev/js/frontend/utils/lightbox/lightbox-manager.js ***!
   \********************************************************************/
@@ -1784,7 +1784,7 @@ exports["default"] = void 0;
 class LightboxManager extends elementorModules.ViewModule {
   static getLightbox() {
     const lightboxPromise = new Promise(resolveLightbox => {
-      __webpack_require__.e(/*! import() | lightbox */ "lightbox").then(__webpack_require__.t.bind(__webpack_require__, /*! elementor-frontend/utils/lightbox/lightbox */ "https://coinfund.app/assets/dev/js/frontend/utils/lightbox/lightbox.js", 23)).then(_ref => {
+      __webpack_require__.e(/*! import() | lightbox */ "lightbox").then(__webpack_require__.t.bind(__webpack_require__, /*! elementor-frontend/utils/lightbox/lightbox */ "../assets/dev/js/frontend/utils/lightbox/lightbox.js", 23)).then(_ref => {
         let {
           default: LightboxModule
         } = _ref;
@@ -1882,7 +1882,7 @@ exports["default"] = LightboxManager;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/utils/swiper.js":
+/***/ "../assets/dev/js/frontend/utils/swiper.js":
 /*!*************************************************!*\
   !*** ../assets/dev/js/frontend/utils/swiper.js ***!
   \*************************************************/
@@ -1972,7 +1972,7 @@ exports["default"] = Swiper;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/utils/url-actions.js":
+/***/ "../assets/dev/js/frontend/utils/url-actions.js":
 /*!******************************************************!*\
   !*** ../assets/dev/js/frontend/utils/url-actions.js ***!
   \******************************************************/
@@ -1986,7 +1986,7 @@ Object.defineProperty(exports, "__esModule", ({
 }));
 exports["default"] = void 0;
 
-__webpack_require__(/*! core-js/modules/web.dom-exception.stack.js */ "https://coinfund.app/node_modules/core-js/modules/web.dom-exception.stack.js");
+__webpack_require__(/*! core-js/modules/web.dom-exception.stack.js */ "../node_modules/core-js/modules/web.dom-exception.stack.js");
 
 class _default extends elementorModules.ViewModule {
   getDefaultSettings() {
@@ -2088,7 +2088,7 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/utils/utils.js":
+/***/ "../assets/dev/js/frontend/utils/utils.js":
 /*!************************************************!*\
   !*** ../assets/dev/js/frontend/utils/utils.js ***!
   \************************************************/
@@ -2126,7 +2126,7 @@ exports.isScrollSnapActive = isScrollSnapActive;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/utils/video-api/base-loader.js":
+/***/ "../assets/dev/js/frontend/utils/video-api/base-loader.js":
 /*!****************************************************************!*\
   !*** ../assets/dev/js/frontend/utils/video-api/base-loader.js ***!
   \****************************************************************/
@@ -2193,7 +2193,7 @@ exports["default"] = BaseLoader;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/utils/video-api/vimeo-loader.js":
+/***/ "../assets/dev/js/frontend/utils/video-api/vimeo-loader.js":
 /*!*****************************************************************!*\
   !*** ../assets/dev/js/frontend/utils/video-api/vimeo-loader.js ***!
   \*****************************************************************/
@@ -2202,14 +2202,14 @@ exports["default"] = BaseLoader;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "https://coinfund.app/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports["default"] = void 0;
 
-var _baseLoader = _interopRequireDefault(__webpack_require__(/*! ./base-loader */ "https://coinfund.app/assets/dev/js/frontend/utils/video-api/base-loader.js"));
+var _baseLoader = _interopRequireDefault(__webpack_require__(/*! ./base-loader */ "../assets/dev/js/frontend/utils/video-api/base-loader.js"));
 
 class VimeoLoader extends _baseLoader.default {
   getApiURL() {
@@ -2241,7 +2241,7 @@ exports["default"] = VimeoLoader;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/frontend/utils/video-api/youtube-loader.js":
+/***/ "../assets/dev/js/frontend/utils/video-api/youtube-loader.js":
 /*!*******************************************************************!*\
   !*** ../assets/dev/js/frontend/utils/video-api/youtube-loader.js ***!
   \*******************************************************************/
@@ -2250,14 +2250,14 @@ exports["default"] = VimeoLoader;
 "use strict";
 
 
-var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "https://coinfund.app/node_modules/@babel/runtime/helpers/interopRequireDefault.js");
+var _interopRequireDefault = __webpack_require__(/*! @babel/runtime/helpers/interopRequireDefault */ "../node_modules/@babel/runtime/helpers/interopRequireDefault.js");
 
 Object.defineProperty(exports, "__esModule", ({
   value: true
 }));
 exports["default"] = void 0;
 
-var _baseLoader = _interopRequireDefault(__webpack_require__(/*! ./base-loader */ "https://coinfund.app/assets/dev/js/frontend/utils/video-api/base-loader.js"));
+var _baseLoader = _interopRequireDefault(__webpack_require__(/*! ./base-loader */ "../assets/dev/js/frontend/utils/video-api/base-loader.js"));
 
 class YoutubeLoader extends _baseLoader.default {
   getApiURL() {
@@ -2282,7 +2282,7 @@ exports["default"] = YoutubeLoader;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/public-path.js":
+/***/ "../assets/dev/js/public-path.js":
 /*!***************************************!*\
   !*** ../assets/dev/js/public-path.js ***!
   \***************************************/
@@ -2296,7 +2296,7 @@ __webpack_require__.p = elementorFrontendConfig.urls.assets + 'js/';
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/utils/breakpoints.js":
+/***/ "../assets/dev/js/utils/breakpoints.js":
 /*!*********************************************!*\
   !*** ../assets/dev/js/utils/breakpoints.js ***!
   \*********************************************/
@@ -2493,7 +2493,7 @@ exports["default"] = Breakpoints;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/utils/events.js":
+/***/ "../assets/dev/js/utils/events.js":
 /*!****************************************!*\
   !*** ../assets/dev/js/utils/events.js ***!
   \****************************************/
@@ -2548,7 +2548,7 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "https://coinfund.app/assets/dev/js/utils/hooks.js":
+/***/ "../assets/dev/js/utils/hooks.js":
 /*!***************************************!*\
   !*** ../assets/dev/js/utils/hooks.js ***!
   \***************************************/
@@ -2840,7 +2840,7 @@ module.exports = EventManager;
 
 /***/ }),
 
-/***/ "https://coinfund.app/core/common/assets/js/utils/environment.js":
+/***/ "../core/common/assets/js/utils/environment.js":
 /*!*****************************************************!*\
   !*** ../core/common/assets/js/utils/environment.js ***!
   \*****************************************************/
@@ -2897,7 +2897,7 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "https://coinfund.app/core/common/assets/js/utils/storage.js":
+/***/ "../core/common/assets/js/utils/storage.js":
 /*!*************************************************!*\
   !*** ../core/common/assets/js/utils/storage.js ***!
   \*************************************************/
@@ -2997,7 +2997,7 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "https://coinfund.app/modules/shapes/assets/js/frontend/frontend.js":
+/***/ "../modules/shapes/assets/js/frontend/frontend.js":
 /*!********************************************************!*\
   !*** ../modules/shapes/assets/js/frontend/frontend.js ***!
   \********************************************************/
@@ -3014,7 +3014,7 @@ exports["default"] = void 0;
 class _default extends elementorModules.Module {
   constructor() {
     super();
-    elementorFrontend.elementsHandler.attachHandler('text-path', () => __webpack_require__.e(/*! import() | text-path */ "text-path").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/text-path */ "https://coinfund.app/modules/shapes/assets/js/frontend/handlers/text-path.js")));
+    elementorFrontend.elementsHandler.attachHandler('text-path', () => __webpack_require__.e(/*! import() | text-path */ "text-path").then(__webpack_require__.bind(__webpack_require__, /*! ./handlers/text-path */ "../modules/shapes/assets/js/frontend/handlers/text-path.js")));
   }
 
 }
@@ -3023,13 +3023,13 @@ exports["default"] = _default;
 
 /***/ }),
 
-/***/ "https://coinfund.app/node_modules/core-js/internals/an-instance.js":
+/***/ "../node_modules/core-js/internals/an-instance.js":
 /*!********************************************************!*\
   !*** ../node_modules/core-js/internals/an-instance.js ***!
   \********************************************************/
 /***/ ((module, __unused_webpack_exports, __webpack_require__) => {
 
-var isPrototypeOf = __webpack_require__(/*! ../internals/object-is-prototype-of */ "https://coinfund.app/node_modules/core-js/internals/object-is-prototype-of.js");
+var isPrototypeOf = __webpack_require__(/*! ../internals/object-is-prototype-of */ "../node_modules/core-js/internals/object-is-prototype-of.js");
 
 var $TypeError = TypeError;
 
@@ -3041,7 +3041,7 @@ module.exports = function (it, Prototype) {
 
 /***/ }),
 
-/***/ "https://coinfund.app/node_modules/core-js/internals/dom-exception-constants.js":
+/***/ "../node_modules/core-js/internals/dom-exception-constants.js":
 /*!********************************************************************!*\
   !*** ../node_modules/core-js/internals/dom-exception-constants.js ***!
   \********************************************************************/
@@ -3078,7 +3078,7 @@ module.exports = {
 
 /***/ }),
 
-/***/ "https://coinfund.app/node_modules/core-js/modules/web.dom-exception.stack.js":
+/***/ "../node_modules/core-js/modules/web.dom-exception.stack.js":
 /*!******************************************************************!*\
   !*** ../node_modules/core-js/modules/web.dom-exception.stack.js ***!
   \******************************************************************/
@@ -3086,19 +3086,19 @@ module.exports = {
 
 "use strict";
 
-var $ = __webpack_require__(/*! ../internals/export */ "https://coinfund.app/node_modules/core-js/internals/export.js");
-var global = __webpack_require__(/*! ../internals/global */ "https://coinfund.app/node_modules/core-js/internals/global.js");
-var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ "https://coinfund.app/node_modules/core-js/internals/get-built-in.js");
-var createPropertyDescriptor = __webpack_require__(/*! ../internals/create-property-descriptor */ "https://coinfund.app/node_modules/core-js/internals/create-property-descriptor.js");
-var defineProperty = (__webpack_require__(/*! ../internals/object-define-property */ "https://coinfund.app/node_modules/core-js/internals/object-define-property.js").f);
-var hasOwn = __webpack_require__(/*! ../internals/has-own-property */ "https://coinfund.app/node_modules/core-js/internals/has-own-property.js");
-var anInstance = __webpack_require__(/*! ../internals/an-instance */ "https://coinfund.app/node_modules/core-js/internals/an-instance.js");
-var inheritIfRequired = __webpack_require__(/*! ../internals/inherit-if-required */ "https://coinfund.app/node_modules/core-js/internals/inherit-if-required.js");
-var normalizeStringArgument = __webpack_require__(/*! ../internals/normalize-string-argument */ "https://coinfund.app/node_modules/core-js/internals/normalize-string-argument.js");
-var DOMExceptionConstants = __webpack_require__(/*! ../internals/dom-exception-constants */ "https://coinfund.app/node_modules/core-js/internals/dom-exception-constants.js");
-var clearErrorStack = __webpack_require__(/*! ../internals/clear-error-stack */ "https://coinfund.app/node_modules/core-js/internals/clear-error-stack.js");
-var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ "https://coinfund.app/node_modules/core-js/internals/descriptors.js");
-var IS_PURE = __webpack_require__(/*! ../internals/is-pure */ "https://coinfund.app/node_modules/core-js/internals/is-pure.js");
+var $ = __webpack_require__(/*! ../internals/export */ "../node_modules/core-js/internals/export.js");
+var global = __webpack_require__(/*! ../internals/global */ "../node_modules/core-js/internals/global.js");
+var getBuiltIn = __webpack_require__(/*! ../internals/get-built-in */ "../node_modules/core-js/internals/get-built-in.js");
+var createPropertyDescriptor = __webpack_require__(/*! ../internals/create-property-descriptor */ "../node_modules/core-js/internals/create-property-descriptor.js");
+var defineProperty = (__webpack_require__(/*! ../internals/object-define-property */ "../node_modules/core-js/internals/object-define-property.js").f);
+var hasOwn = __webpack_require__(/*! ../internals/has-own-property */ "../node_modules/core-js/internals/has-own-property.js");
+var anInstance = __webpack_require__(/*! ../internals/an-instance */ "../node_modules/core-js/internals/an-instance.js");
+var inheritIfRequired = __webpack_require__(/*! ../internals/inherit-if-required */ "../node_modules/core-js/internals/inherit-if-required.js");
+var normalizeStringArgument = __webpack_require__(/*! ../internals/normalize-string-argument */ "../node_modules/core-js/internals/normalize-string-argument.js");
+var DOMExceptionConstants = __webpack_require__(/*! ../internals/dom-exception-constants */ "../node_modules/core-js/internals/dom-exception-constants.js");
+var clearErrorStack = __webpack_require__(/*! ../internals/clear-error-stack */ "../node_modules/core-js/internals/clear-error-stack.js");
+var DESCRIPTORS = __webpack_require__(/*! ../internals/descriptors */ "../node_modules/core-js/internals/descriptors.js");
+var IS_PURE = __webpack_require__(/*! ../internals/is-pure */ "../node_modules/core-js/internals/is-pure.js");
 
 var DOM_EXCEPTION = 'DOMException';
 var Error = getBuiltIn('Error');
@@ -3160,7 +3160,7 @@ if (PolyfilledDOMExceptionPrototype.constructor !== PolyfilledDOMException) {
 },
 /******/ __webpack_require__ => { // webpackRuntimeModules
 /******/ var __webpack_exec__ = (moduleId) => (__webpack_require__(__webpack_require__.s = moduleId))
-/******/ __webpack_require__.O(0, ["frontend-modules"], () => (__webpack_exec__("https://coinfund.app/assets/dev/js/frontend/frontend.js")));
+/******/ __webpack_require__.O(0, ["frontend-modules"], () => (__webpack_exec__("../assets/dev/js/frontend/frontend.js")));
 /******/ var __webpack_exports__ = __webpack_require__.O();
 /******/ }
 ]);
