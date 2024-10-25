@@ -4,7 +4,6 @@ Allow: /css/
 Allow: /fonts/
 Allow: /images/
 Allow: /js/
-Allow: /campaign/
 Allow: /wallet/
 Allow: /about/
 Allow: /aup/
