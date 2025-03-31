@@ -1,5 +1,4 @@
 // List of relays for campaigns data
 var relays = [
-    { "name": "https://data.coinfund.app" },
-    { "name": "https://cfidata.fun" }
+    { "name": "https://data.coinfund.app" }
 ];
